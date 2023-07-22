@@ -1863,8 +1863,8 @@ const questions = {
       {
         question: "Solve for y: 2y + 5 = 17",
         options: [
-          { text: "y = 6", isCorrect: false },
-          { text: "y = 7", isCorrect: true },
+          { text: "y = 6", isCorrect: true },
+          { text: "y = 7", isCorrect: false },
           { text: "y = 8", isCorrect: false },
           { text: "y = 5", isCorrect: false },
         ],
@@ -2061,7 +2061,7 @@ const questions = {
         question: "What is the value of 5² + 3³?",
         options: [
           { text: "32", isCorrect: false },
-          { text: "44", isCorrect: true },
+          { text: "34", isCorrect: true },
           { text: "25", isCorrect: false },
           { text: "36", isCorrect: false },
         ],
@@ -2180,8 +2180,8 @@ const questions = {
       {
         question: "Find the median of the numbers: 8, 10, 15, 12, 6",
         options: [
-          { text: "10", isCorrect: false },
-          { text: "12", isCorrect: true },
+          { text: "12", isCorrect: false },
+          { text: "10", isCorrect: true },
           { text: "8", isCorrect: false },
           { text: "15", isCorrect: false },
         ],

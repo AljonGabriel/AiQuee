@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="quiz">
+      <div class="quiz-container">
+        <div class="quiz-user-name">
+          <label for="inputUserName"><b>Enter name below :</b></label>
+          <br />
+          <input
+            type="text"
+            placeholder="Full name"
+            id="inputUserName"
+          />
+        </div>
+        <div class="quiz-subjects">
+          <span><b>Select Subject :</b></span>
+          <br />
+          <label for="englishSubject"
+            >English<input
+              type="radio"
+              name="subject"
+              id="englishSubject"
+              value="English"
+            />
+          </label>
+          <label for="scienceSubject"
+            >Science<input
+              type="radio"
+              name="subject"
+              id="scienceSubject"
+              value="Science"
+            />
+          </label>
+          <label for="mathSubject"
+            >Math<input
+              type="radio"
+              name="subject"
+              id="mathSubject"
+              value="Math"
+            />
+          </label>
+          <label for="filipinoSubject"
+            >Filipino<input
+              type="radio"
+              name="subject"
+              id="filipinoSubject"
+              value="Filipino"
+            />
+          </label>
+        </div>
+        <div class="quiz-level-grade">
+          <span><b>Selec Grade:</b></span>
+          <br />
+          <label for="grade7"
+            >Grade 7<input
+              type="radio"
+              id="grade7"
+              name="grade"
+              value="Seven"
+          /></label>
+          <label for="grade8"
+            >Grade 8<input
+              type="radio"
+              id="grade8"
+              name="grade"
+              value="Eight"
+          /></label>
+          <label for="grade9"
+            >Grade 9<input
+              type="radio"
+              id="grade9"
+              name="grade"
+              value="Nine"
+          /></label>
+          <label for="grade10"
+            >Grade 10<input
+              type="radio"
+              id="grade10"
+              name="grade"
+              value="Ten"
+          /></label>
+          <label for="grade11"
+            >Grade 11<input
+              type="radio"
+              id="grade11"
+              name="grade"
+              value="Eleven"
+          /></label>
+          <label for="grade12"
+            >Grade 12<input
+              type="radio"
+              id="grade12"
+              name="grade"
+              value="Twelve"
+          /></label>
+        </div>
+        <div class="quiz-starting-game">
+          <button
+            id="quizStartQuiz"
+            class="quiz-start-quiz"
+          >
+            Start Qiuz
+          </button>
+        </div>
+        <div class="quiz-header">
+          <span
+            id="userName"
+            class="user-name"
+            >Name:</span
+          >
+          <span
+            id="chosenSubject"
+            class="chosen-subject"
+            >Subject:</span
+          >
+          <span
+            id="chosenGrade"
+            class="chosen-grade"
+            >Grade:</span
+          >
+          <span
+            id="score"
+            class="score"
+            >Score:</span
+          >
+          <span
+            class="timer"
+            id="timer"
+          ></span>
+        </div>
+        <div
+          class="quiz-body"
+          id="quizBody"
+        ></div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
