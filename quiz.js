@@ -425,155 +425,214 @@ const questions = {
         question:
           "Identify the correct form of the verb in the sentence: 'They ________ to the beach every summer.'",
         options: [
-          { text: " goes", isCorrect: false },
-          { text: " go", isCorrect: true },
-          { text: " going", isCorrect: false },
-          { text: " gone", isCorrect: false },
+          { text: "goes", isCorrect: false },
+          {
+            text: "go",
+            isCorrect: true,
+            explanation: "The correct form of the verb is 'go.'",
+          },
+          { text: "going", isCorrect: false },
+          { text: "gone", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct homophone for the sentence: "Please set the ________ on the table."',
         options: [
-          { text: " newt", isCorrect: false },
-          { text: " meat", isCorrect: false },
-          { text: " meet", isCorrect: true },
-          { text: " mete", isCorrect: false },
+          { text: "newt", isCorrect: false },
+          { text: "meat", isCorrect: false },
+          {
+            text: "meet",
+            isCorrect: true,
+            explanation: "The correct homophone is 'meet.'",
+          },
+          { text: "mete", isCorrect: false },
         ],
       },
       {
         question: "What is the meaning of the word 'quintessential'?",
         options: [
-          { text: " familiar", isCorrect: false },
-          { text: " essential", isCorrect: true },
-          { text: " confused", isCorrect: false },
-          { text: " quizzical", isCorrect: false },
+          { text: "familiar", isCorrect: false },
+          {
+            text: "essential",
+            isCorrect: true,
+            explanation:
+              "The word 'quintessential' means representing the most perfect or typical example of something.",
+          },
+          { text: "confused", isCorrect: false },
+          { text: "quizzical", isCorrect: false },
         ],
       },
       {
         question: "Which sentence is written in the active voice?",
         options: [
           {
-            text: " The project will be completed by the team.",
+            text: "The project will be completed by the team.",
             isCorrect: false,
           },
-          { text: " The book was read by the students.", isCorrect: false },
+          { text: "The book was read by the students.", isCorrect: false },
           {
-            text: " The chef prepared a delicious meal.",
+            text: "The chef prepared a delicious meal.",
             isCorrect: true,
+            explanation:
+              "The sentence 'The chef prepared a delicious meal.' is written in the active voice, where the subject 'chef' performs the action.",
           },
-          { text: " The song will be sung by the choir.", isCorrect: false },
+          { text: "The song will be sung by the choir.", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct form of the pronoun to complete the sentence: "_________ is coming to the party."',
         options: [
-          { text: " Her", isCorrect: false },
-          { text: " She", isCorrect: true },
-          { text: " Hers", isCorrect: false },
-          { text: " Himself", isCorrect: false },
+          { text: "Her", isCorrect: false },
+          {
+            text: "She",
+            isCorrect: true,
+            explanation:
+              "The correct pronoun to complete the sentence is 'She.'",
+          },
+          { text: "Hers", isCorrect: false },
+          { text: "Himself", isCorrect: false },
         ],
       },
       {
         question: 'Identify the correct definition of the word "mellifluous":',
         options: [
-          { text: " harsh and unpleasant", isCorrect: false },
+          { text: "harsh and unpleasant", isCorrect: false },
           {
-            text: " soothing and sweet sounding",
+            text: "soothing and sweet sounding",
             isCorrect: true,
+            explanation:
+              "The word 'mellifluous' means having a smooth, rich flow and a pleasing musicality to the voice or sound.",
           },
-          { text: " energetic and lively", isCorrect: false },
-          { text: " tall and imposing", isCorrect: false },
+          { text: "energetic and lively", isCorrect: false },
+          { text: "tall and imposing", isCorrect: false },
         ],
       },
       {
         question: "What is the correct past tense form of the verb 'rise'?",
         options: [
-          { text: " rises", isCorrect: false },
-          { text: " risen", isCorrect: true },
-          { text: " rising", isCorrect: false },
-          { text: " rose", isCorrect: false },
+          { text: "rises", isCorrect: false },
+          {
+            text: "risen",
+            isCorrect: true,
+            explanation:
+              "The correct past tense form of the verb 'rise' is 'risen.'",
+          },
+          { text: "rising", isCorrect: false },
+          { text: "rose", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct form of the verb to complete the sentence: "She ________ her best in the competition."',
         options: [
-          { text: " put", isCorrect: false },
-          { text: " putting", isCorrect: false },
-          { text: " putted", isCorrect: false },
-          { text: " puts", isCorrect: true },
+          { text: "put", isCorrect: false },
+          { text: "putting", isCorrect: false },
+          { text: "putted", isCorrect: false },
+          {
+            text: "puts",
+            isCorrect: true,
+            explanation: "The correct form of the verb is 'puts.'",
+          },
         ],
       },
       {
         question: 'What is the meaning of the word "pervasive"?',
         options: [
-          { text: " minor and insignificant", isCorrect: false },
+          { text: "minor and insignificant", isCorrect: false },
           {
-            text: " common and widespread",
+            text: "common and widespread",
             isCorrect: true,
+            explanation:
+              "The word 'pervasive' means widespread and present throughout an area or group.",
           },
-          { text: " unpleasant and offensive", isCorrect: false },
-          { text: " simple and straightforward", isCorrect: false },
+          { text: "unpleasant and offensive", isCorrect: false },
+          { text: "simple and straightforward", isCorrect: false },
         ],
       },
       {
         question: 'Identify the antonym for the word "ambitious":',
         options: [
-          { text: " lazy", isCorrect: true },
-          { text: " eager", isCorrect: false },
-          { text: " motivated", isCorrect: false },
-          { text: " determined", isCorrect: false },
+          {
+            text: "lazy",
+            isCorrect: true,
+            explanation:
+              "The antonym for 'ambitious' is 'lazy,' which means unwilling to work or use energy.",
+          },
+          { text: "eager", isCorrect: false },
+          { text: "motivated", isCorrect: false },
+          { text: "determined", isCorrect: false },
         ],
       },
       {
         question: 'What is the correct definition of the word "facetious"?',
         options: [
-          { text: " serious and solemn", isCorrect: false },
-          { text: " humorous and playful", isCorrect: true },
-          { text: " cautious and reserved", isCorrect: false },
-          { text: " curious and inquisitive", isCorrect: false },
+          { text: "serious and solemn", isCorrect: false },
+          {
+            text: "humorous and playful",
+            isCorrect: true,
+            explanation:
+              "The word 'facetious' means treating serious issues with deliberately inappropriate humor; flippant.",
+          },
+          { text: "cautious and reserved", isCorrect: false },
+          { text: "curious and inquisitive", isCorrect: false },
         ],
       },
       {
         question: "Which sentence is written in the future perfect tense?",
         options: [
-          { text: " She is cooking dinner.", isCorrect: false },
+          { text: "She is cooking dinner.", isCorrect: false },
           {
-            text: " I will have finished the report by tomorrow.",
+            text: "I will have finished the report by tomorrow.",
             isCorrect: true,
+            explanation:
+              "The sentence 'I will have finished the report by tomorrow.' is written in the future perfect tense, indicating that the action of finishing the report will be completed before a specific point in the future.",
           },
-          { text: " They have studied for the exam.", isCorrect: false },
-          { text: " He had already left when I arrived.", isCorrect: false },
+          { text: "They have studied for the exam.", isCorrect: false },
+          { text: "He had already left when I arrived.", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct form of the pronoun to complete the sentence: "_________ are going to the park."',
         options: [
-          { text: " They", isCorrect: true },
-          { text: " Them", isCorrect: false },
-          { text: " Their", isCorrect: false },
-          { text: " They're", isCorrect: false },
+          {
+            text: "They",
+            isCorrect: true,
+            explanation:
+              "The correct pronoun to complete the sentence is 'They.'",
+          },
+          { text: "Them", isCorrect: false },
+          { text: "Their", isCorrect: false },
+          { text: "They're", isCorrect: false },
         ],
       },
       {
         question: "What is the correct plural form of the word 'datum'?",
         options: [
-          { text: " data", isCorrect: true },
-          { text: " datums", isCorrect: false },
-          { text: " datas", isCorrect: false },
-          { text: " daten", isCorrect: false },
+          {
+            text: "data",
+            isCorrect: true,
+            explanation: "The correct plural form of 'datum' is 'data.'",
+          },
+          { text: "datums", isCorrect: false },
+          { text: "datas", isCorrect: false },
+          { text: "daten", isCorrect: false },
         ],
       },
       {
         question: 'Identify the correct definition of the word "vex":',
         options: [
-          { text: " to make happy", isCorrect: false },
-          { text: " to annoy or irritate", isCorrect: true },
-          { text: " to understand completely", isCorrect: false },
-          { text: " to fail or lose", isCorrect: false },
+          { text: "to make happy", isCorrect: false },
+          {
+            text: "to annoy or irritate",
+            isCorrect: true,
+            explanation:
+              "The word 'vex' means to annoy, frustrate, or provoke someone to anger.",
+          },
+          { text: "to understand completely", isCorrect: false },
+          { text: "to fail or lose", isCorrect: false },
         ],
       },
     ],
@@ -581,143 +640,351 @@ const questions = {
       {
         question: "What is the correct definition of the word 'ephemeral'?",
         options: [
-          { text: " lasting for a long time", isCorrect: false },
-          { text: " temporary or short-lived", isCorrect: true },
-          { text: " unable to be changed", isCorrect: false },
-          { text: " extremely beautiful", isCorrect: false },
+          {
+            text: "lasting for a long time",
+            isCorrect: false,
+          },
+          {
+            text: "temporary or short-lived",
+            isCorrect: true,
+            explanation:
+              "'Ephemeral' means something that lasts for a very short time, being temporary or short-lived in nature.",
+          },
+          {
+            text: "unable to be changed",
+            isCorrect: false,
+          },
+          {
+            text: "extremely beautiful",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the verb to complete the sentence: He __________ a book.",
         options: [
-          { text: " runs", isCorrect: false },
-          { text: " runned", isCorrect: false },
-          { text: " run", isCorrect: true },
-          { text: " running", isCorrect: false },
+          {
+            text: "runs",
+            isCorrect: false,
+          },
+          {
+            text: "runned",
+            isCorrect: false,
+          },
+          {
+            text: "run",
+            isCorrect: true,
+            explanation: "The correct form is 'He run a book.'",
+          },
+          {
+            text: "running",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "What is the meaning of the word 'ubiquitous'?",
         options: [
-          { text: " outdated", isCorrect: false },
-          { text: " dangerous", isCorrect: false },
-          { text: " easily seen or found everywhere", isCorrect: true },
-          { text: " mysterious", isCorrect: false },
+          {
+            text: "outdated",
+            isCorrect: false,
+          },
+          {
+            text: "dangerous",
+            isCorrect: false,
+          },
+          {
+            text: "easily seen or found everywhere",
+            isCorrect: true,
+            explanation:
+              "'Ubiquitous' refers to something that is present, or seems to be present, everywhere at the same time.",
+          },
+          {
+            text: "mysterious",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct homophone for the sentence: We left _______ house early in the morning.",
         options: [
-          { text: " there", isCorrect: false },
-          { text: " their", isCorrect: true },
-          { text: " they're", isCorrect: false },
-          { text: " here", isCorrect: false },
+          {
+            text: "there",
+            isCorrect: false,
+          },
+          {
+            text: "their",
+            isCorrect: true,
+            explanation:
+              "The correct homophone is 'their,' which indicates possession, meaning the house belonged to someone.",
+          },
+          {
+            text: "they're",
+            isCorrect: false,
+          },
+          {
+            text: "here",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Identify the correct form of the verb to complete the sentence: She ________ the letter yesterday.",
         options: [
-          { text: " spoken", isCorrect: false },
-          { text: " spoke", isCorrect: true },
-          { text: " speaking", isCorrect: false },
-          { text: " speaks", isCorrect: false },
+          {
+            text: "spoken",
+            isCorrect: false,
+          },
+          {
+            text: "spoke",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'She spoke the letter yesterday.'",
+          },
+          {
+            text: "speaking",
+            isCorrect: false,
+          },
+          {
+            text: "speaks",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "What is the meaning of the word 'arduous'?",
         options: [
-          { text: " easy", isCorrect: false },
-          { text: " difficult and tiring", isCorrect: true },
-          { text: " uncertain", isCorrect: false },
-          { text: " interesting", isCorrect: false },
+          {
+            text: "easy",
+            isCorrect: false,
+          },
+          {
+            text: "difficult and tiring",
+            isCorrect: true,
+            explanation:
+              "'Arduous' means something that requires a lot of effort, is difficult, and can be physically or mentally tiring.",
+          },
+          {
+            text: "uncertain",
+            isCorrect: false,
+          },
+          {
+            text: "interesting",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the pronoun to complete the sentence: Mark hurt _______ when he fell off the bike.",
         options: [
-          { text: " he", isCorrect: false },
-          { text: " him", isCorrect: false },
-          { text: " his", isCorrect: false },
-          { text: " himself", isCorrect: true },
+          {
+            text: "he",
+            isCorrect: false,
+          },
+          {
+            text: "him",
+            isCorrect: false,
+          },
+          {
+            text: "his",
+            isCorrect: false,
+          },
+          {
+            text: "himself",
+            isCorrect: true,
+            explanation:
+              "The correct pronoun is 'himself,' as it reflects the action back to the subject, Mark.",
+          },
         ],
       },
       {
         question: "What is the meaning of the word 'exemplary'?",
         options: [
-          { text: " lacking in skill", isCorrect: false },
-          { text: " admirable and outstanding", isCorrect: true },
-          { text: " harmful", isCorrect: false },
-          { text: " ordinary", isCorrect: false },
+          {
+            text: "lacking in skill",
+            isCorrect: false,
+          },
+          {
+            text: "admirable and outstanding",
+            isCorrect: true,
+            explanation:
+              "'Exemplary' means something that sets a high standard, worthy of admiration, and outstanding in its qualities.",
+          },
+          {
+            text: "harmful",
+            isCorrect: false,
+          },
+          {
+            text: "ordinary",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the verb to complete the sentence: The food had already been ________ by the time we arrived.",
         options: [
-          { text: " eaten", isCorrect: true },
-          { text: " eated", isCorrect: false },
-          { text: " ate", isCorrect: false },
-          { text: " eating", isCorrect: false },
+          {
+            text: "eaten",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'The food had already been eaten by the time we arrived.'",
+          },
+          {
+            text: "eated",
+            isCorrect: false,
+          },
+          {
+            text: "ate",
+            isCorrect: false,
+          },
+          {
+            text: "eating",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "What is the correct plural form of 'datum'?",
         options: [
-          { text: " data", isCorrect: true },
-          { text: " datums", isCorrect: false },
-          { text: " daten", isCorrect: false },
-          { text: " datas", isCorrect: false },
+          {
+            text: "data",
+            isCorrect: true,
+            explanation: "The correct plural form of 'datum' is 'data.'",
+          },
+          {
+            text: "datums",
+            isCorrect: false,
+          },
+          {
+            text: "daten",
+            isCorrect: false,
+          },
+          {
+            text: "datas",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the verb to complete the sentence: We ________ the mountain last weekend.",
         options: [
-          { text: " climbed", isCorrect: true },
-          { text: " climed", isCorrect: false },
-          { text: " clumb", isCorrect: false },
-          { text: " climbing", isCorrect: false },
+          {
+            text: "climbed",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'We climbed the mountain last weekend.'",
+          },
+          {
+            text: "climed",
+            isCorrect: false,
+          },
+          {
+            text: "clumb",
+            isCorrect: false,
+          },
+          {
+            text: "climbing",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "What is the meaning of the word 'mitigate'?",
         options: [
-          { text: " to make worse", isCorrect: false },
-          { text: " to decrease in size", isCorrect: false },
-          { text: " to make up for", isCorrect: false },
-          { text: " to make less severe or painful", isCorrect: true },
+          {
+            text: "to make worse",
+            isCorrect: false,
+          },
+          {
+            text: "to decrease in size",
+            isCorrect: false,
+          },
+          {
+            text: "to make up for",
+            isCorrect: false,
+          },
+          {
+            text: "to make less severe or painful",
+            isCorrect: true,
+            explanation:
+              "'Mitigate' means to make something less severe, harsh, or painful; to alleviate or reduce the impact or intensity of something negative.",
+          },
         ],
       },
       {
         question:
           "Choose the correct homophone for the sentence: The sun will _______ in the east.",
         options: [
-          { text: " rise", isCorrect: true },
-          { text: " rize", isCorrect: false },
-          { text: " ryse", isCorrect: false },
-          { text: " rize", isCorrect: false },
+          {
+            text: "rise",
+            isCorrect: true,
+            explanation:
+              "The correct homophone is 'rise,' indicating the action of the sun ascending in the sky from the east.",
+          },
+          {
+            text: "rize",
+            isCorrect: false,
+          },
+          {
+            text: "ryse",
+            isCorrect: false,
+          },
+          {
+            text: "rize",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "What is the correct past tense form of the verb 'begin'?",
         options: [
-          { text: " beginning", isCorrect: false },
-          { text: " beganned", isCorrect: false },
-          { text: " begun", isCorrect: true },
-          { text: " beginned", isCorrect: false },
+          {
+            text: "beginning",
+            isCorrect: false,
+          },
+          {
+            text: "beganned",
+            isCorrect: false,
+          },
+          {
+            text: "begun",
+            isCorrect: true,
+            explanation:
+              "The correct past tense form of the verb 'begin' is 'begun.'",
+          },
+          {
+            text: "beginned",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the antonym for the word 'benevolent':",
         options: [
-          { text: " kind", isCorrect: false },
-          { text: " cruel", isCorrect: true },
-          { text: " generous", isCorrect: false },
-          { text: " helpful", isCorrect: false },
+          {
+            text: "kind",
+            isCorrect: false,
+          },
+          {
+            text: "cruel",
+            isCorrect: true,
+            explanation:
+              "The antonym for 'benevolent' is 'cruel,' which means showing a lack of kindness or compassion, and causing pain or suffering to others.",
+          },
+          {
+            text: "generous",
+            isCorrect: false,
+          },
+          {
+            text: "helpful",
+            isCorrect: false,
+          },
         ],
       },
     ],
@@ -725,7 +992,12 @@ const questions = {
       {
         question: "Choose the correct spelling of the word:",
         options: [
-          { text: "accommodate", isCorrect: true },
+          {
+            text: "accommodate",
+            isCorrect: true,
+            explanation:
+              "The correct spelling is 'accommodate,' meaning to provide lodging or to make suitable arrangements.",
+          },
           { text: "acommodate", isCorrect: false },
           { text: "accomodate", isCorrect: false },
           { text: "accommodatee", isCorrect: false },
@@ -735,7 +1007,12 @@ const questions = {
         question: "Identify the correct sentence:",
         options: [
           { text: "Their going to the movies.", isCorrect: false },
-          { text: "They're going to the movies.", isCorrect: true },
+          {
+            text: "They're going to the movies.",
+            isCorrect: true,
+            explanation:
+              "The correct sentence is 'They're going to the movies.' The contraction 'they're' means 'they are.'",
+          },
           { text: "There going to the movies.", isCorrect: false },
           { text: "There're going to the movies.", isCorrect: false },
         ],
@@ -745,7 +1022,12 @@ const questions = {
           "Choose the correct form of the verb in the sentence: 'She ____ the cake for her birthday.'",
         options: [
           { text: "bake", isCorrect: false },
-          { text: "baked", isCorrect: true },
+          {
+            text: "baked",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'She baked the cake for her birthday.' 'Baked' is the past tense of the verb 'bake.'",
+          },
           { text: "baken", isCorrect: false },
           { text: "bakes", isCorrect: false },
         ],
@@ -762,7 +1044,12 @@ const questions = {
       {
         question: "Choose the correct antonym for the word 'exuberant':",
         options: [
-          { text: "depressed", isCorrect: true },
+          {
+            text: "depressed",
+            isCorrect: true,
+            explanation:
+              "'Exuberant' means full of energy, excitement, and cheerfulness, while 'depressed' means feeling sad and low-spirited.",
+          },
           { text: "joyful", isCorrect: false },
           { text: "cheerful", isCorrect: false },
           { text: "excited", isCorrect: false },
@@ -772,7 +1059,12 @@ const questions = {
         question:
           "Identify the correct form of the verb in the sentence: 'They ____ to the party last night.'",
         options: [
-          { text: "went", isCorrect: true },
+          {
+            text: "went",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'They went to the party last night.' 'Went' is the past tense of the verb 'go.'",
+          },
           { text: "go", isCorrect: false },
           { text: "gone", isCorrect: false },
           { text: "goes", isCorrect: false },
@@ -785,13 +1077,23 @@ const questions = {
           { text: "sight", isCorrect: false },
           { text: "cite", isCorrect: false },
           { text: "site", isCorrect: false },
-          { text: "sleight", isCorrect: true },
+          {
+            text: "sleight",
+            isCorrect: true,
+            explanation:
+              "'Sleight' refers to dexterity or skill, while the correct word for this sentence is 'sight,' meaning a view or a large number.",
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "Let's go to the beach", isCorrect: true },
+          {
+            text: "Let's go to the beach",
+            isCorrect: true,
+            explanation:
+              "The correct sentence is 'Let's go to the beach.' The contraction 'Let's' means 'Let us.'",
+          },
           { text: "Lets go to the beach", isCorrect: false },
           { text: "Let's go too the beach", isCorrect: false },
           { text: "Let us go to the beach", isCorrect: false },
@@ -801,7 +1103,12 @@ const questions = {
         question: "Choose the correct synonym for the word 'abundant':",
         options: [
           { text: "scarce", isCorrect: false },
-          { text: "plentiful", isCorrect: true },
+          {
+            text: "plentiful",
+            isCorrect: true,
+            explanation:
+              "'Abundant' means existing in large quantities or more than enough, while 'plentiful' is a synonym with the same meaning.",
+          },
           { text: "limited", isCorrect: false },
           { text: "sparse", isCorrect: false },
         ],
@@ -810,7 +1117,12 @@ const questions = {
         question: "Identify the correct sentence:",
         options: [
           { text: "Her waiting for the bus.", isCorrect: false },
-          { text: "She is waiting for the bus.", isCorrect: true },
+          {
+            text: "She is waiting for the bus.",
+            isCorrect: true,
+            explanation:
+              "The correct sentence is 'She is waiting for the bus.' The pronoun 'she' needs the corresponding verb 'is waiting.'",
+          },
           { text: "She waiting for the bus.", isCorrect: false },
           { text: "Her is waiting for the bus.", isCorrect: false },
         ],
@@ -819,7 +1131,12 @@ const questions = {
         question:
           "Choose the correct form of the verb in the sentence: 'He ____ his guitar during the concert.'",
         options: [
-          { text: "plays", isCorrect: true },
+          {
+            text: "plays",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'He plays his guitar during the concert.' 'Plays' is the present tense of the verb 'play.'",
+          },
           { text: "play", isCorrect: false },
           { text: "played", isCorrect: false },
           { text: "playing", isCorrect: false },
@@ -829,7 +1146,12 @@ const questions = {
         question: "Identify the correct sentence:",
         options: [
           { text: "We're going to the zoo?", isCorrect: false },
-          { text: "We're going to the zoo!", isCorrect: true },
+          {
+            text: "We're going to the zoo!",
+            isCorrect: true,
+            explanation:
+              "The correct sentence is 'We're going to the zoo!' The exclamation mark indicates excitement or emphasis.",
+          },
           { text: "Were going to the zoo.", isCorrect: false },
           { text: "We're going to the zoo.", isCorrect: false },
         ],
@@ -838,7 +1160,12 @@ const questions = {
         question: "Choose the correct synonym for the word 'elated':",
         options: [
           { text: "depressed", isCorrect: false },
-          { text: "joyful", isCorrect: true },
+          {
+            text: "joyful",
+            isCorrect: true,
+            explanation:
+              "'Elated' means extremely happy and joyful, and 'joyful' is a synonym with the same meaning.",
+          },
           { text: "cheerful", isCorrect: false },
           { text: "excited", isCorrect: false },
         ],
@@ -847,7 +1174,12 @@ const questions = {
         question: "Identify the correct sentence:",
         options: [
           { text: "I have a cold to", isCorrect: false },
-          { text: "I have a cold, too", isCorrect: true },
+          {
+            text: "I have a cold, too",
+            isCorrect: true,
+            explanation:
+              "The correct sentence is 'I have a cold, too.' It means that the speaker also has a cold.",
+          },
           { text: "I have a cold two", isCorrect: false },
           { text: "I have a cold to.", isCorrect: false },
         ],
@@ -856,7 +1188,12 @@ const questions = {
         question:
           "Choose the correct form of the verb in the sentence: 'They ____ their car at the mall.'",
         options: [
-          { text: "park", isCorrect: true },
+          {
+            text: "park",
+            isCorrect: true,
+            explanation:
+              "The correct form is 'They park their car at the mall.' 'Park' is the base form of the verb.",
+          },
           { text: "parking", isCorrect: false },
           { text: "parked", isCorrect: false },
           { text: "parks", isCorrect: false },
@@ -867,28 +1204,70 @@ const questions = {
       {
         question: "Choose the correct synonym for the word 'auspicious':",
         options: [
-          { text: "unlucky", isCorrect: false },
-          { text: "promising", isCorrect: true },
-          { text: "miserable", isCorrect: false },
-          { text: "ominous", isCorrect: false },
+          {
+            text: "unlucky",
+            isCorrect: false,
+          },
+          {
+            text: "promising",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'promising.' 'Auspicious' means favorable or indicating a positive outcome, which is synonymous with 'promising.'",
+          },
+          {
+            text: "miserable",
+            isCorrect: false,
+          },
+          {
+            text: "ominous",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "She neither sings or dances.", isCorrect: false },
-          { text: "She neither sings nor dances.", isCorrect: true },
-          { text: "She either sings nor dances.", isCorrect: false },
-          { text: "She either sings or dances.", isCorrect: false },
+          {
+            text: "She neither sings or dances.",
+            isCorrect: false,
+          },
+          {
+            text: "She neither sings nor dances.",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'She neither sings nor dances.' The correct sentence uses 'nor' to indicate that both actions (singing and dancing) are not done.",
+          },
+          {
+            text: "She either sings nor dances.",
+            isCorrect: false,
+          },
+          {
+            text: "She either sings or dances.",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Choose the correct antonym for the word 'ephemeral':",
         options: [
-          { text: "brief", isCorrect: false },
-          { text: "lasting", isCorrect: true },
-          { text: "temporary", isCorrect: false },
-          { text: "transient", isCorrect: false },
+          {
+            text: "brief",
+            isCorrect: false,
+          },
+          {
+            text: "lasting",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'lasting.' 'Ephemeral' means short-lived or lasting for a very short time, so its antonym would be 'lasting,' which means enduring or continuing for a long time.",
+          },
+          {
+            text: "temporary",
+            isCorrect: false,
+          },
+          {
+            text: "transient",
+            isCorrect: false,
+          },
         ],
       },
       {
@@ -909,6 +1288,8 @@ const questions = {
           {
             text: "The mountain is so high, to the climbers' delight.",
             isCorrect: true,
+            explanation:
+              "The correct answer is 'The mountain is so high, to the climbers' delight.' The sentence uses a comma to indicate the reason for the high mountain, which is the delight of the climbers.",
           },
         ],
       },
@@ -916,103 +1297,251 @@ const questions = {
         question:
           "Choose the correct form of the verb in the sentence: 'She ____ her research paper yesterday.'",
         options: [
-          { text: "finished", isCorrect: true },
-          { text: "finishes", isCorrect: false },
-          { text: "finish", isCorrect: false },
-          { text: "finishing", isCorrect: false },
+          {
+            text: "finished",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'finished.' The correct form of the verb is 'finished' as it indicates that she completed her research paper in the past.",
+          },
+          {
+            text: "finishes",
+            isCorrect: false,
+          },
+          {
+            text: "finish",
+            isCorrect: false,
+          },
+          {
+            text: "finishing",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "The weather is hot today.", isCorrect: true },
-          { text: "The weather is today hot.", isCorrect: false },
-          { text: "The weather today is hot.", isCorrect: false },
-          { text: "The hot weather is today.", isCorrect: false },
+          {
+            text: "The weather is hot today.",
+            isCorrect: true,
+          },
+          {
+            text: "The weather is today hot.",
+            isCorrect: false,
+          },
+          {
+            text: "The weather today is hot.",
+            isCorrect: false,
+          },
+          {
+            text: "The hot weather is today.",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct homophone for the sentence: 'He's going to ___ the ball into the goal.'",
         options: [
-          { text: "kick", isCorrect: true },
-          { text: "pick", isCorrect: false },
-          { text: "peek", isCorrect: false },
-          { text: "kik", isCorrect: false },
+          {
+            text: "kick",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'kick.' A homophone for 'kick' is 'kik.'",
+          },
+          {
+            text: "pick",
+            isCorrect: false,
+          },
+          {
+            text: "peek",
+            isCorrect: false,
+          },
+          {
+            text: "kik",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "I was laying on the couch all day.", isCorrect: false },
-          { text: "I was lying on the couch all day.", isCorrect: true },
-          { text: "I was laying on the couch all day.", isCorrect: false },
-          { text: "I was lied on the couch all day.", isCorrect: false },
+          {
+            text: "I was laying on the couch all day.",
+            isCorrect: false,
+          },
+          {
+            text: "I was lying on the couch all day.",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'I was lying on the couch all day.' 'Lying' is the correct past participle of the verb 'lie' when used in this context.",
+          },
+          {
+            text: "I was laying on the couch all day.",
+            isCorrect: false,
+          },
+          {
+            text: "I was lied on the couch all day.",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the verb in the sentence: 'The students ____ excited about the upcoming field trip.'",
         options: [
-          { text: "were", isCorrect: true },
-          { text: "was", isCorrect: false },
-          { text: "are", isCorrect: false },
-          { text: "is", isCorrect: false },
+          {
+            text: "were",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'were.' 'The students' is a plural subject, so the correct form of the verb is 'were,' which indicates past tense.",
+          },
+          {
+            text: "was",
+            isCorrect: false,
+          },
+          {
+            text: "are",
+            isCorrect: false,
+          },
+          {
+            text: "is",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "The museum's collection is priceless.", isCorrect: true },
-          { text: "The museums' collection is priceless.", isCorrect: false },
-          { text: "The museums collection is priceless.", isCorrect: false },
-          { text: "The museum's collections are priceless.", isCorrect: false },
+          {
+            text: "The museum's collection is priceless.",
+            isCorrect: true,
+          },
+          {
+            text: "The museums' collection is priceless.",
+            isCorrect: false,
+          },
+          {
+            text: "The museums collection is priceless.",
+            isCorrect: false,
+          },
+          {
+            text: "The museum's collections are priceless.",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Choose the correct synonym for the word 'ostentatious':",
         options: [
-          { text: "modest", isCorrect: true },
-          { text: "extravagant", isCorrect: false },
-          { text: "simple", isCorrect: false },
-          { text: "unassuming", isCorrect: false },
+          {
+            text: "modest",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'modest.' 'Ostentatious' means characterized by vulgar or pretentious display, intended to attract attention, impress, or show off wealth; whereas 'modest' means unassuming or moderate in the estimation of one's abilities or achievements.",
+          },
+          {
+            text: "extravagant",
+            isCorrect: false,
+          },
+          {
+            text: "simple",
+            isCorrect: false,
+          },
+          {
+            text: "unassuming",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "He do not like pizza.", isCorrect: false },
-          { text: "He does not like pizza.", isCorrect: true },
-          { text: "He don't like pizza.", isCorrect: false },
-          { text: "He doesn't like pizza.", isCorrect: false },
+          {
+            text: "He do not like pizza.",
+            isCorrect: false,
+          },
+          {
+            text: "He does not like pizza.",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'He does not like pizza.' The sentence uses the correct form of the verb 'do' and 'not,' making it grammatically accurate.",
+          },
+          {
+            text: "He don't like pizza.",
+            isCorrect: false,
+          },
+          {
+            text: "He doesn't like pizza.",
+            isCorrect: false,
+          },
         ],
       },
       {
         question:
           "Choose the correct form of the verb in the sentence: 'The movie ____ by the audience.'",
         options: [
-          { text: "was enjoyed", isCorrect: true },
-          { text: "enjoyed", isCorrect: false },
-          { text: "is enjoying", isCorrect: false },
-          { text: "enjoys", isCorrect: false },
+          {
+            text: "was enjoyed",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'was enjoyed.' The movie was the object of the action (enjoyed) performed by the audience in the past.",
+          },
+          {
+            text: "enjoyed",
+            isCorrect: false,
+          },
+          {
+            text: "is enjoying",
+            isCorrect: false,
+          },
+          {
+            text: "enjoys",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Identify the correct sentence:",
         options: [
-          { text: "We made it to the top of the mountain!", isCorrect: true },
-          { text: "We made it too the top of the mountain.", isCorrect: false },
-          { text: "We made it two the top of the mountain.", isCorrect: false },
-          { text: "We made it at the top of the mountain!", isCorrect: false },
+          {
+            text: "We made it to the top of the mountain!",
+            isCorrect: true,
+          },
+          {
+            text: "We made it too the top of the mountain.",
+            isCorrect: false,
+          },
+          {
+            text: "We made it two the top of the mountain.",
+            isCorrect: false,
+          },
+          {
+            text: "We made it at the top of the mountain!",
+            isCorrect: false,
+          },
         ],
       },
       {
         question: "Choose the correct antonym for the word 'acrimonious':",
         options: [
-          { text: "bitter", isCorrect: false },
-          { text: "friendly", isCorrect: true },
-          { text: "harsh", isCorrect: false },
-          { text: "spiteful", isCorrect: false },
+          {
+            text: "bitter",
+            isCorrect: false,
+          },
+          {
+            text: "friendly",
+            isCorrect: true,
+            explanation:
+              "The correct answer is 'friendly.' 'Acrimonious' means angry or bitter, so its antonym would be 'friendly,' which means kind and pleasant.",
+          },
+          {
+            text: "harsh",
+            isCorrect: false,
+          },
+          {
+            text: "spiteful",
+            isCorrect: false,
+          },
         ],
       },
     ],
@@ -2412,11 +2941,7 @@ function handleOptionClick(currentQuestion, e) {
       (option) => option.text === selectedOptionText
     );
 
-    const correctAnswerExplanation = currentQuestion.options.find(
-      (option) => option.isCorrect
-    );
-
-    console.log;
+    console.log(selectedOption);
 
     if (selectedOption.isCorrect) {
       console.log("Correct answer!");
@@ -2434,8 +2959,6 @@ function handleOptionClick(currentQuestion, e) {
         getCorrectAnswer(currentQuestion) +
         " " +
         getCorrectAnswerExplanation(currentQuestion);
-
-      const explanationDisplay = document.querySelector("#explanationDisplay");
 
       //Create Next Question Button
       const nextQuestionButton = document.createElement("button");
@@ -2463,6 +2986,7 @@ function getCorrectAnswer(currentQuestion) {
   const correctOption = currentQuestion.options.find(
     (option) => option.isCorrect
   );
+  console.log(correctOption);
   return correctOption.text;
 }
 function getCorrectAnswerExplanation(currentQuestion) {
