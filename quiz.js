@@ -5,7 +5,12 @@ const questions = {
         question: "What is the correct definition of the word 'abundant'?",
         options: [
           { text: "lacking in quantity", isCorrect: false },
-          { text: "excessive, plentiful", isCorrect: true },
+          {
+            text: "excessive, plentiful",
+            isCorrect: true,
+            explanation:
+              "Abundant means having more than enough of something, which accurately describes the option 'excessive, plentiful.'",
+          },
           { text: "rare, scarce", isCorrect: false },
           { text: "visible, clear", isCorrect: false },
         ],
@@ -13,61 +18,78 @@ const questions = {
       {
         question: "Identify the synonym for the word 'eloquent':",
         options: [
-          { text: " clumsy", isCorrect: false },
-          { text: " hesitant", isCorrect: false },
-          { text: " persuasive", isCorrect: true },
-          { text: " ordinary", isCorrect: false },
+          { text: "clumsy", isCorrect: false },
+          { text: "hesitant", isCorrect: false },
+          {
+            text: "persuasive",
+            isCorrect: true,
+            explanation:
+              "Eloquent is synonymous with 'persuasive,' which means having the ability to speak or write effectively and convincingly.",
+          },
+          { text: "ordinary", isCorrect: false },
         ],
       },
       {
         question: "What is the correct plural form of 'child'?",
         options: [
-          { text: " childs", isCorrect: false },
-          { text: " childen", isCorrect: false },
-          { text: " children", isCorrect: true },
-          { text: " childes", isCorrect: false },
+          { text: "childs", isCorrect: false },
+          { text: "childen", isCorrect: false },
+          {
+            text: "children",
+            isCorrect: true,
+            explanation: "The correct plural form of 'child' is 'children'.",
+          },
+          { text: "childes", isCorrect: false },
         ],
       },
       {
         question: "Which sentence is written in the passive voice?",
         options: [
           {
-            text: " The teacher explained the lesson to the students.",
+            text: "The teacher explained the lesson to the students.",
             isCorrect: false,
           },
           {
-            text: " The students eagerly answered the questions.",
+            text: "The students eagerly answered the questions.",
             isCorrect: false,
           },
           {
-            text: " The book captivated the young readers.",
+            text: "The book captivated the young readers.",
             isCorrect: false,
           },
           {
-            text: " The car hit the tree during the storm.",
+            text: "The car hit the tree during the storm.",
             isCorrect: true,
+            explanation:
+              "The sentence 'The car hit the tree during the storm.' is written in the passive voice as the subject 'car' receives the action of 'hit,' and the doer of the action ('who hit the car') is not mentioned.",
           },
         ],
       },
       {
         question: "Choose the correct spelling of the word:",
         options: [
-          { text: " recieve", isCorrect: false },
-          { text: " recieve", isCorrect: false },
-          { text: " receive", isCorrect: true },
-          { text: " receeve", isCorrect: false },
+          { text: "recieve", isCorrect: false },
+          { text: "recieve", isCorrect: false },
+          {
+            text: "receive",
+            isCorrect: true,
+            explanation: "The correct spelling of the word is 'receive.'",
+          },
+          { text: "receeve", isCorrect: false },
         ],
       },
       {
         question:
           "What is the meaning of the idiom 'barking up the wrong tree'?",
         options: [
-          { text: " trying to train a dog", isCorrect: false },
-          { text: " searching for the right path", isCorrect: false },
-          { text: " arguing with someone", isCorrect: false },
+          { text: "trying to train a dog", isCorrect: false },
+          { text: "searching for the right path", isCorrect: false },
+          { text: "arguing with someone", isCorrect: false },
           {
-            text: " pursuing the wrong person or idea",
+            text: "pursuing the wrong person or idea",
             isCorrect: true,
+            explanation:
+              "The idiom 'barking up the wrong tree' means to pursue the wrong person, idea, or course of action; it suggests wasting effort or seeking answers in the wrong place.",
           },
         ],
       },
@@ -75,14 +97,16 @@ const questions = {
         question: "Which sentence is written in the subjunctive mood?",
         options: [
           {
-            text: " If I am the boss, I would give you a raise.",
+            text: "If I am the boss, I would give you a raise.",
             isCorrect: false,
           },
-          { text: " I am sure he will be on time.", isCorrect: false },
-          { text: " If she was here, she would help us.", isCorrect: false },
+          { text: "I am sure he will be on time.", isCorrect: false },
+          { text: "If she was here, she would help us.", isCorrect: false },
           {
-            text: " I wish it were raining.",
+            text: "I wish it were raining.",
             isCorrect: true,
+            explanation:
+              "The sentence 'I wish it were raining.' is written in the subjunctive mood, expressing a wish or hypothetical situation contrary to fact.",
           },
         ],
       },
@@ -90,7 +114,11 @@ const questions = {
         question:
           "Identify the correct form of the verb in the sentence: 'He ___ his bicycle to school every day.'",
         options: [
-          { text: "rides", isCorrect: true },
+          {
+            text: "rides",
+            isCorrect: true,
+            explanation: "The correct form of the verb is 'rides.'",
+          },
           { text: "ride", isCorrect: false },
           { text: "rided", isCorrect: false },
           { text: "riding", isCorrect: false },
@@ -100,7 +128,11 @@ const questions = {
         question:
           "Choose the correct homophone for the sentence: 'I love to ___ books.'",
         options: [
-          { text: "read", isCorrect: true },
+          {
+            text: "read",
+            isCorrect: true,
+            explanation: "The correct homophone for the sentence is 'read.'",
+          },
           { text: "reed", isCorrect: false },
           { text: "rede", isCorrect: false },
           { text: "ried", isCorrect: false },
@@ -109,47 +141,72 @@ const questions = {
       {
         question: "What is the meaning of the word 'consequence'?",
         options: [
-          { text: " result or effect", isCorrect: true },
-          { text: " purpose or goal", isCorrect: false },
-          { text: " challenge or difficulty", isCorrect: false },
-          { text: " arrangement or order", isCorrect: false },
+          {
+            text: "result or effect",
+            isCorrect: true,
+            explanation:
+              "The meaning of the word 'consequence' is a result or effect that follows from an action or condition.",
+          },
+          { text: "purpose or goal", isCorrect: false },
+          { text: "challenge or difficulty", isCorrect: false },
+          { text: "arrangement or order", isCorrect: false },
         ],
       },
       {
         question: "What is the correct past tense form of the verb 'swim'?",
         options: [
-          { text: " swam", isCorrect: true },
-          { text: " swum", isCorrect: false },
-          { text: " swimmed", isCorrect: false },
-          { text: " swim", isCorrect: false },
+          {
+            text: "swam",
+            isCorrect: true,
+            explanation:
+              "The correct past tense form of the verb 'swim' is 'swam.'",
+          },
+          { text: "swum", isCorrect: false },
+          { text: "swimmed", isCorrect: false },
+          { text: "swim", isCorrect: false },
         ],
       },
       {
         question: "Identify the antonym for the word 'generous':",
         options: [
-          { text: " selfish", isCorrect: true },
-          { text: " grateful", isCorrect: false },
-          { text: " giving", isCorrect: false },
-          { text: " kind", isCorrect: false },
+          {
+            text: "selfish",
+            isCorrect: true,
+            explanation:
+              "The antonym for the word 'generous' is 'selfish,' which means lacking consideration for others and only concerned with one's own interests.",
+          },
+          { text: "grateful", isCorrect: false },
+          { text: "giving", isCorrect: false },
+          { text: "kind", isCorrect: false },
         ],
       },
       {
         question: "What is the meaning of the word 'placid'?",
         options: [
-          { text: " calm and peaceful", isCorrect: true },
-          { text: " loud and noisy", isCorrect: false },
-          { text: " angry and aggressive", isCorrect: false },
-          { text: " uncertain and doubtful", isCorrect: false },
+          {
+            text: "calm and peaceful",
+            isCorrect: true,
+            explanation:
+              "The meaning of the word 'placid' is calm and peaceful.",
+          },
+          { text: "loud and noisy", isCorrect: false },
+          { text: "angry and aggressive", isCorrect: false },
+          { text: "uncertain and doubtful", isCorrect: false },
         ],
       },
       {
         question:
           "Choose the correct form of the pronoun to complete the sentence:",
         options: [
-          { text: " He", isCorrect: false },
-          { text: " They", isCorrect: true },
-          { text: " It", isCorrect: false },
-          { text: " She", isCorrect: false },
+          { text: "He", isCorrect: false },
+          {
+            text: "They",
+            isCorrect: true,
+            explanation:
+              "The correct form of the pronoun to complete the sentence is 'They.'",
+          },
+          { text: "It", isCorrect: false },
+          { text: "She", isCorrect: false },
         ],
       },
     ],
@@ -157,70 +214,93 @@ const questions = {
       {
         question: "Who painted the Mona Lisa?",
         options: [
-          { text: " Leonardo da Vinci", isCorrect: true },
-          { text: " Vincent van Gogh", isCorrect: false },
-          { text: " Pablo Picasso", isCorrect: false },
-          { text: " Michelangelo", isCorrect: false },
+          {
+            text: "Leonardo da Vinci",
+            isCorrect: true,
+            explanation:
+              "The Mona Lisa was painted by Leonardo da Vinci, a famous Italian artist and polymath of the Renaissance period.",
+          },
+          { text: "Vincent van Gogh", isCorrect: false },
+          { text: "Pablo Picasso", isCorrect: false },
+          { text: "Michelangelo", isCorrect: false },
         ],
       },
       {
         question: 'Identify the synonym for the word "eloquent":',
         options: [
-          { text: " clumsy", isCorrect: false },
-          { text: " hesitant", isCorrect: false },
-          { text: " persuasive", isCorrect: true },
-          { text: " ordinary", isCorrect: false },
+          { text: "clumsy", isCorrect: false },
+          { text: "hesitant", isCorrect: false },
+          {
+            text: "persuasive",
+            isCorrect: true,
+            explanation:
+              "The word 'eloquent' is synonymous with 'persuasive,' which means having the ability to speak or write effectively and convincingly.",
+          },
+          { text: "ordinary", isCorrect: false },
         ],
       },
       {
         question: 'What is the correct plural form of "child"?',
         options: [
-          { text: " childs", isCorrect: false },
-          { text: " childen", isCorrect: false },
-          { text: " children", isCorrect: true },
-          { text: " childes", isCorrect: false },
+          { text: "childs", isCorrect: false },
+          { text: "childen", isCorrect: false },
+          {
+            text: "children",
+            isCorrect: true,
+            explanation:
+              "The correct plural form of the word 'child' is 'children.'",
+          },
+          { text: "childes", isCorrect: false },
         ],
       },
       {
         question: "Which sentence is written in the passive voice?",
         options: [
           {
-            text: " The teacher explained the lesson to the students.",
+            text: "The teacher explained the lesson to the students.",
             isCorrect: false,
           },
           {
-            text: " The students eagerly answered the questions.",
+            text: "The students eagerly answered the questions.",
             isCorrect: false,
           },
           {
-            text: " The book captivated the young readers.",
+            text: "The book captivated the young readers.",
             isCorrect: false,
           },
           {
-            text: " The car hit the tree during the storm.",
+            text: "The car hit the tree during the storm.",
             isCorrect: true,
+            explanation:
+              "The sentence 'The car hit the tree during the storm.' is written in the passive voice as the subject 'car' receives the action of 'hit,' and the doer of the action ('who hit the car') is not mentioned.",
           },
         ],
       },
       {
         question: "Choose the correct spelling of the word:",
         options: [
-          { text: " recieve", isCorrect: false },
-          { text: " recieve", isCorrect: false },
-          { text: " receive", isCorrect: true },
-          { text: " receeve", isCorrect: false },
+          { text: "recieve", isCorrect: false },
+          { text: "recieve", isCorrect: false },
+          {
+            text: "receive",
+            isCorrect: true,
+            explanation: "The correct spelling of the word is 'receive.'",
+          },
+          { text: "receeve", isCorrect: false },
         ],
       },
       {
         question:
           'What is the meaning of the idiom "barking up the wrong tree"?',
         options: [
-          { text: " trying to train a dog", isCorrect: false },
-          { text: " searching for the right path", isCorrect: false },
-          { text: " arguing with someone", isCorrect: false },
+          { text: "trying to train a dog", isCorrect: false },
+          { text: "searching for the right path", isCorrect: false },
+          { text: "arguing with someone", isCorrect: false },
           {
-            text: " pursuing the wrong person or idea",
+            text: "pursuing the wrong person or idea",
             isCorrect: true,
+            explanation:
+              "The idiom 'barking up the wrong tree' means to pursue the wrong person, idea, or course of action; it suggests wasting effort or seeking answers in the wrong place.",
           },
         ],
       },
@@ -228,14 +308,16 @@ const questions = {
         question: "Which sentence is written in the subjunctive mood?",
         options: [
           {
-            text: " If I am the boss, I would give you a raise.",
+            text: "If I am the boss, I would give you a raise.",
             isCorrect: false,
           },
-          { text: " I am sure he will be on time.", isCorrect: false },
-          { text: " If she was here, she would help us.", isCorrect: false },
+          { text: "I am sure he will be on time.", isCorrect: false },
+          { text: "If she was here, she would help us.", isCorrect: false },
           {
-            text: " I wish it were raining.",
+            text: "I wish it were raining.",
             isCorrect: true,
+            explanation:
+              "The sentence 'I wish it were raining.' is written in the subjunctive mood, expressing a wish or hypothetical situation contrary to fact.",
           },
         ],
       },
@@ -243,66 +325,98 @@ const questions = {
         question:
           'Identify the correct form of the verb in the sentence: "He ________ his bike to school every day."',
         options: [
-          { text: " rides", isCorrect: true },
-          { text: " ride", isCorrect: false },
-          { text: " rided", isCorrect: false },
-          { text: " riding", isCorrect: false },
+          {
+            text: "rides",
+            isCorrect: true,
+            explanation: "The correct form of the verb is 'rides.'",
+          },
+          { text: "ride", isCorrect: false },
+          { text: "rided", isCorrect: false },
+          { text: "riding", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct homophone for the sentence: "She is going to __________ her favorite book."',
         options: [
-          { text: " read", isCorrect: true },
-          { text: " reed", isCorrect: false },
-          { text: " rede", isCorrect: false },
-          { text: " ried", isCorrect: false },
+          {
+            text: "read",
+            isCorrect: true,
+            explanation: "The correct homophone for the sentence is 'read.'",
+          },
+          { text: "reed", isCorrect: false },
+          { text: "rede", isCorrect: false },
+          { text: "ried", isCorrect: false },
         ],
       },
       {
         question: 'What is the meaning of the word "consequence"?',
         options: [
-          { text: " result or effect", isCorrect: true },
-          { text: " purpose or goal", isCorrect: false },
-          { text: " challenge or difficulty", isCorrect: false },
-          { text: " arrangement or order", isCorrect: false },
+          {
+            text: "result or effect",
+            isCorrect: true,
+            explanation:
+              "The word 'consequence' means the result or effect of an action, typically a repercussion or outcome.",
+          },
+          { text: "purpose or goal", isCorrect: false },
+          { text: "challenge or difficulty", isCorrect: false },
+          { text: "arrangement or order", isCorrect: false },
         ],
       },
       {
         question: "What is the correct past tense form of the verb 'swim'?",
         options: [
-          { text: " swam", isCorrect: true },
-          { text: " swum", isCorrect: false },
-          { text: " swimmed", isCorrect: false },
-          { text: " swim", isCorrect: false },
+          {
+            text: "swam",
+            isCorrect: true,
+            explanation:
+              "The correct past tense form of the verb 'swim' is 'swam.'",
+          },
+          { text: "swum", isCorrect: false },
+          { text: "swimmed", isCorrect: false },
+          { text: "swim", isCorrect: false },
         ],
       },
       {
         question: 'Identify the antonym for the word "generous":',
         options: [
-          { text: " selfish", isCorrect: true },
-          { text: " grateful", isCorrect: false },
-          { text: " giving", isCorrect: false },
-          { text: " kind", isCorrect: false },
+          {
+            text: "selfish",
+            isCorrect: true,
+            explanation:
+              "The antonym for the word 'generous' is 'selfish,' which means lacking consideration for others and only concerned with one's own interests.",
+          },
+          { text: "grateful", isCorrect: false },
+          { text: "giving", isCorrect: false },
+          { text: "kind", isCorrect: false },
         ],
       },
       {
         question: 'What is the meaning of the word "placid"?',
         options: [
-          { text: " calm and peaceful", isCorrect: true },
-          { text: " loud and noisy", isCorrect: false },
-          { text: " angry and aggressive", isCorrect: false },
-          { text: " uncertain and doubtful", isCorrect: false },
+          {
+            text: "calm and peaceful",
+            isCorrect: true,
+            explanation: "The word 'placid' means calm and peaceful.",
+          },
+          { text: "loud and noisy", isCorrect: false },
+          { text: "angry and aggressive", isCorrect: false },
+          { text: "uncertain and doubtful", isCorrect: false },
         ],
       },
       {
         question:
           'Choose the correct form of the pronoun to complete the sentence: "_________ will be attending the party tonight."',
         options: [
-          { text: " He", isCorrect: false },
-          { text: " They", isCorrect: true },
-          { text: " It", isCorrect: false },
-          { text: " She", isCorrect: false },
+          { text: "He", isCorrect: false },
+          {
+            text: "They",
+            isCorrect: true,
+            explanation:
+              "The correct pronoun to complete the sentence is 'They.'",
+          },
+          { text: "It", isCorrect: false },
+          { text: "She", isCorrect: false },
         ],
       },
     ],
@@ -2199,6 +2313,7 @@ const chosenSubjectDisplay = document.querySelector("#chosenSubject");
 const chosenGradeDisplay = document.querySelector("#chosenGrade");
 const scoreDisplay = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
+const correctAnswerDisplay = document.querySelector("#correctAnswerDisplay");
 
 const subjects = {
   english: document.getElementById("englishSubject"),
@@ -2218,6 +2333,7 @@ const grades = {
 
 const answerButton = document.querySelectorAll("#answerButton");
 const startGame = document.querySelector("#quizStartQuiz");
+const nextQuestion = document.querySelector("#nextQuestion");
 
 let quizStart = false;
 let chosenSubject;
@@ -2284,6 +2400,9 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 function handleOptionClick(currentQuestion, e) {
+  const nextQuestionContainer = document.querySelector(
+    "#nextQuestionContainer"
+  );
   if (e.target.nodeName === "BUTTON") {
     // Get the selected option text
     const selectedOptionText = e.target.textContent.split(") ")[1]; // Remove the letter and space part;
@@ -2293,23 +2412,65 @@ function handleOptionClick(currentQuestion, e) {
       (option) => option.text === selectedOptionText
     );
 
-    console.log(selectedOption);
+    const correctAnswerExplanation = currentQuestion.options.find(
+      (option) => option.isCorrect
+    );
+
+    console.log;
 
     if (selectedOption.isCorrect) {
       console.log("Correct answer!");
       score++;
-      // Remove the previous question and options
-
       scoreDisplay.innerHTML = "Score: " + score;
+      quizContainer.innerHTML = "";
+      currentQuestionIndex++;
+      correctAnswerDisplay.innerHTML = "";
+      createQuestions();
     } else {
       console.log("Wrong answer!");
-      // Handle wrong answer scenario here (if neede
-    }
 
-    quizContainer.innerHTML = "";
-    currentQuestionIndex++;
-    createQuestions();
+      correctAnswerDisplay.innerHTML =
+        "The correct answer is: " +
+        getCorrectAnswer(currentQuestion) +
+        " " +
+        getCorrectAnswerExplanation(currentQuestion);
+
+      const explanationDisplay = document.querySelector("#explanationDisplay");
+
+      //Create Next Question Button
+      const nextQuestionButton = document.createElement("button");
+      nextQuestionButton.setAttribute("id", "nextQuestion");
+      nextQuestionButton.textContent = "Proceed to next Question?";
+
+      // Use appendChild to add the nextQuestionButton to the nextQuestionContainer
+      nextQuestionContainer.appendChild(nextQuestionButton);
+
+      nextQuestionButton.addEventListener("click", () => {
+        quizContainer.innerHTML = "";
+        currentQuestionIndex++;
+        correctAnswerDisplay.innerHTML = "";
+        createQuestions();
+
+        // Remove the "Next Question" button
+        nextQuestionContainer.removeChild(nextQuestionButton);
+      });
+    }
   }
+}
+
+function getCorrectAnswer(currentQuestion) {
+  // Find the correct option in the options array of the current question
+  const correctOption = currentQuestion.options.find(
+    (option) => option.isCorrect
+  );
+  return correctOption.text;
+}
+function getCorrectAnswerExplanation(currentQuestion) {
+  // Find the correct option in the options array of the current question
+  const explanation = currentQuestion.options.find(
+    (option) => option.isCorrect
+  );
+  return explanation.explanation;
 }
 
 function createQuestions() {
@@ -2363,7 +2524,6 @@ function createQuestions() {
 function countDownTimer() {
   timer--;
   timerDisplay.innerHTML = "Time left: " + formatTime(timer);
-  console.log(timer);
 
   if (currentQuestionIndex === shuffledQuestions.length) {
     clearInterval(countDownTimer);
