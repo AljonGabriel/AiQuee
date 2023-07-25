@@ -37,12 +37,18 @@ nav {
 
 .nav-logo-container {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo-container img {
+  width: 50px;
 }
 
 .nav-logo-container h2 {
   font-family: var(--Primary-Font);
-  font-weight: 800;
-  color: var(--Primary-Color);
+  font-weight: 100;
 }
 
 .nav-lists-container {
@@ -86,11 +92,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .upper-quiz-container {
   width: 500px;
-  height: 500px;
+  height: auto;
 }
 
 .upper-quiz-container h2 {
@@ -98,7 +105,6 @@ nav {
   color: var(--Text-Color);
   font-size: 3.5em;
   font-weight: 800;
-  text-align: center;
 }
 
 .upper-quiz-container p {
@@ -106,7 +112,6 @@ nav {
   color: var(--Text-Color);
   font-size: 1.5em;
   font-weight: 100;
-  text-align: center;
 }
 
 .upper-btn-container {
