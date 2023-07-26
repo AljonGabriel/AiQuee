@@ -2,28 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/quiz.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/index.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Quiz</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-logo-container">
-          <img
-            src="assets/logo/1x/Asset 3.png"
-            alt="Logo"
-          />
+          <img src="assets/logo/1x/Asset 3.png" alt="Logo" />
           <h2>AiQuee</h2>
         </div>
         <div class="nav-lists-container">
@@ -37,144 +25,94 @@
     <main>
       <div class="quiz">
         <div class="quiz-container">
-          <div class="quiz-user-name">
-            <label for="inputUserName"><b>Enter name below :</b></label>
+          <div class="quiz-mechanics-container" id="quizMechanicsContainer">
+            <div class="quiz-user-name">
+              <label for="inputUserName"><b>Enter name below : </b></label>
+              <input type="text" placeholder="Full name" id="inputUserName" />
+            </div>
+            <div class="quiz-subjects-container">
+              <label><b>Select Subject :</b></label>
+              <br />
+
+              <div class="subject-container">
+                <label for="englishSubject">English</label>
+                <input type="radio" name="subject" id="englishSubject" value="English" />
+              </div>
+              <div class="subject-container">
+                <label for="scienceSubject">Science</label>
+                <input type="radio" name="subject" id="scienceSubject" value="Science" />
+              </div>
+
+              <div class="subject-container">
+                <label for="mathSubject">Math</label>
+                <input type="radio" name="subject" id="mathSubject" value="Math" />
+              </div>
+
+              <div class="subject-container">
+                <label for="filipinoSubject">Filipino </label>
+                <input type="radio" name="subject" id="filipinoSubject" value="Filipino" />
+              </div>
+            </div>
             <br />
-            <input
-              type="text"
-              placeholder="Full name"
-              id="inputUserName"
-            />
-          </div>
-          <div class="quiz-subjects">
-            <span><b>Select Subject :</b></span>
+            <hr />
             <br />
-            <label for="englishSubject"
-              >English<input
-                type="radio"
-                name="subject"
-                id="englishSubject"
-                value="English"
-              />
-            </label>
-            <label for="scienceSubject"
-              >Science<input
-                type="radio"
-                name="subject"
-                id="scienceSubject"
-                value="Science"
-              />
-            </label>
-            <label for="mathSubject"
-              >Math<input
-                type="radio"
-                name="subject"
-                id="mathSubject"
-                value="Math"
-              />
-            </label>
-            <label for="filipinoSubject"
-              >Filipino<input
-                type="radio"
-                name="subject"
-                id="filipinoSubject"
-                value="Filipino"
-              />
-            </label>
+            <div class="quiz-level-grade-container">
+              <label><b>Select Grade:</b></label>
+
+              <div class="grade-container">
+                <label for="grade7">Grade 7</label>
+                <input type="radio" id="grade7" name="grade" value="Seven" />
+              </div>
+              <div class="grade-container">
+                <label for="grade8">Grade 8</label>
+                <input type="radio" id="grade8" name="grade" value="Eight" />
+              </div>
+              <div class="grade-container">
+                <label for="grade9">Grade 9</label>
+                <input type="radio" id="grade9" name="grade" value="Nine" />
+              </div>
+              <div class="grade-container">
+                <label for="grade10">Grade 10</label>
+                <input type="radio" id="grade10" name="grade" value="Ten" />
+              </div>
+              <div class="grade-container">
+                <label for="grade11">Grade 11</label>
+                <input type="radio" id="grade11" name="grade" value="Eleven" />
+              </div>
+              <div class="grade-container">
+                <label for="grade12">Grade 12</label> <input type="radio" id="grade12" name="grade" value="Twelve" />
+              </div>
+            </div>
+
+            <div class="quiz-getting-scope-button-container">
+              <button onclick="{getScope()}" class="quiz-scope-button">Next</button>
+            </div>
           </div>
-          <div class="quiz-level-grade">
-            <span><b>Selec Grade:</b></span>
+          <div class="quiz-scope-header-container" id="quizScopeHeaderContainer">
+            <span id="userName" class="user-name"></span>
+            <span id="chosenSubject" class="chosen-subject"></span>
+            <span id="chosenGrade" class="chosen-grade"></span>
+            <span id="score" class="score"></span>
+            <span class="timer" id="timer"></span>
+          </div>
+
+          <div class="quiz-scope-container" id="quizScopeContainer">
+            <hr />
             <br />
-            <label for="grade7"
-              >Grade 7<input
-                type="radio"
-                id="grade7"
-                name="grade"
-                value="Seven"
-            /></label>
-            <label for="grade8"
-              >Grade 8<input
-                type="radio"
-                id="grade8"
-                name="grade"
-                value="Eight"
-            /></label>
-            <label for="grade9"
-              >Grade 9<input
-                type="radio"
-                id="grade9"
-                name="grade"
-                value="Nine"
-            /></label>
-            <label for="grade10"
-              >Grade 10<input
-                type="radio"
-                id="grade10"
-                name="grade"
-                value="Ten"
-            /></label>
-            <label for="grade11"
-              >Grade 11<input
-                type="radio"
-                id="grade11"
-                name="grade"
-                value="Eleven"
-            /></label>
-            <label for="grade12"
-              >Grade 12<input
-                type="radio"
-                id="grade12"
-                name="grade"
-                value="Twelve"
-            /></label>
+            <p>No. of Questions: 15</p>
+            <p>Timer: 15:00</p>
+            <br />
+            <div class="scope" id="scope"></div>
+            <div class="quiz-starting-game">
+              <button id="quizStartQuiz" class="quiz-start-button">Start Qiuz</button>
+            </div>
           </div>
-          <div class="quiz-starting-game">
-            <button
-              id="quizStartQuiz"
-              class="quiz-start-quiz"
-            >
-              Start Qiuz
-            </button>
+          <div class="quiz-body-container" id="quizBodyContainer">
+            <div class="quiz-question-options-container" id="quizQuestionsOptionsContainer"></div>
+            <div class="explanation-container"><span id="explanationDisplay" class="quiz-explanation"></span></div>
+
+            <div id="nextQuestionContainer" class="next-question-container"></div>
           </div>
-          <div class="quiz-header">
-            <span
-              id="userName"
-              class="user-name"
-              >Name:</span
-            >
-            <span
-              id="chosenSubject"
-              class="chosen-subject"
-              >Subject:</span
-            >
-            <span
-              id="chosenGrade"
-              class="chosen-grade"
-              >Grade:</span
-            >
-            <span
-              id="score"
-              class="score"
-              >Score:</span
-            >
-            <span
-              class="timer"
-              id="timer"
-            ></span>
-          </div>
-          <div
-            class="quiz-body"
-            id="quizBody"
-          ></div>
-          <span
-            id="correctAnswerDisplay"
-            class="correct-answer"
-          ></span>
-          <div
-            id="nextQuestionContainer"
-            class="next-question-container"
-          ></div>
-          <span id="explanationDisplay"></span>
         </div>
       </div>
     </main>

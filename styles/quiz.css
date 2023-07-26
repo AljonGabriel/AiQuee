@@ -1,17 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
+
+  /* outline: 1px dotted red; */
+  box-sizing: border-box;
+  --Secondary-Font: 'Roboto', sans-serif;
+  --Primary-Font: 'Roboto Condensed', sans-serif;
+  --Background: #fefbfa;
+  --Text-Color: #120502;
+  --Secondary-Color: #fad7d1;
+  --Primary-Color: #eb6952;
+  --Accent: #e8553b;
+  --Hover: #e8553b85;
+  --Font-Hover: #771908;
+  --White-Color: #ffffff;
+}
+
+label {
+  font-family: var(--Secondary-Font);
+  color: var(--Text-Color);
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 8px; /* Adjust spacing between the radio button and the label */
+  cursor: pointer;
+}
+/* Hide the default radio button */
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Unchecked state */
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Checked state */
+input[type='radio']:checked:before {
+  background-color: var(--Primary-Color); /* Change this color for the selected state */
+}
+
+/* Add some additional styles to indicate hover and active states */
+input[type='radio']:hover:not(:checked) {
+  border-color: #999;
+}
+
+input[type='radio']:active:not(:checked):before {
+  background-color: #ccc;
+}
+.quiz-mechanics-container {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-user-name {
+  margin: 20px 0;
+}
+
+.quiz-user-name input {
+  width: 100%;
+  height: 30px;
+  border: 1px var(--Accent) solid;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.quiz-subjects-container,
+.quiz-level-grade-container {
+  display: flex;
+  align-items: center;
+}
+
+.subject-container,
+.grade-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .quiz {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
+  background-color: var(--Accent);
 }
 
 .quiz-container {
+  width: 1000px;
+  height: 600px;
+  background-color: var(--Background);
+  padding: 50px;
+}
+
+.quiz-scope-header-container {
+  margin: 20px 0;
+}
+
+.quiz-scope-header-container span {
+  font-family: var(--Primary-Font);
+  font-weight: 600;
+  padding: 10px;
+}
+
+.quiz-options-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quiz-question-container {
+  margin: 20px 0;
+}
+
+.quiz-question-container h2 {
+  font-family: var(--Primary-Font);
+  font-weight: 400;
+}
+
+.quiz-scope-container {
   width: 100%;
-  height: 100%;
+  display: none;
+}
+
+.quiz-scope-container li,
+p {
+  font-family: var(--Primary-Font);
+  font-size: 1.2em;
+}
+
+.explanation-container {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.explanation-container span {
+  font-family: var(--Primary-Font);
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.quiz-scope-button,
+.quiz-start-button,
+.quiz-next-question-button {
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--Primary-Color);
+  border: none;
+  display: inline;
+  transition: 0.1s ease-in;
+  color: var(--Text-Color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: var(--Primary-Font);
+  padding: 5px;
+  font-size: 1em;
+  color: var(--White-Color);
+}
+
+.answer-button {
+  width: 500px;
+  height: 50px;
+  background-color: var(--Secondary-Color);
+  border: none;
+  display: inline;
+  transition: 0.1s ease-in;
+  color: var(--Text-Color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: var(--Primary-Font);
+  padding: 5px;
+  font-size: 1em;
+}
+
+.answer-button:hover {
+  background-color: var(--Primary-Color);
+  color: var(--White-Color);
+}
+
+.correct-answer {
+  width: 500px;
+  height: 50px;
+  background-color: #2ecc71;
+  border: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wrong-answer {
+  width: 500px;
+  height: 50px;
+  background-color: #e74c3c;
+  border: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+  font-size: 16px;
+  cursor: pointer;
 }
