@@ -92,31 +92,34 @@
             <span id="userName" class="user-name"></span>
             <span id="chosenSubject" class="chosen-subject"></span>
             <span id="chosenGrade" class="chosen-grade"></span>
-            <span id="score" class="score"></span>
             <span class="timer" id="timer"></span>
           </div>
 
           <div class="quiz-scope-container" id="quizScopeContainer">
-            <hr />
             <br />
             <p>No. of Questions: 15</p>
             <p>Timer: 15:00</p>
             <br />
             <div class="scope" id="scope"></div>
             <div class="quiz-starting-game">
-              <button id="quizStartQuiz" class="quiz-start-button">Start Qiuz</button>
+              <button id="quizStartButton" class="quiz-start-button">Start Qiuz</button>
             </div>
           </div>
           <div class="quiz-body-container" id="quizBodyContainer">
             <div class="quiz-question-options-container" id="quizQuestionsOptionsContainer"></div>
-            <div class="explanation-container"><span id="explanationDisplay" class="quiz-explanation"></span></div>
+
+            <div class="explanation-container" id="explanationContainer">
+              <span id="explanationDisplay" class="quiz-explanation"></span>
+            </div>
 
             <div id="nextQuestionContainer" class="next-question-container"></div>
           </div>
+          <div class="quiz-result-container" id="quizResultContainer"></div>
         </div>
       </div>
     </main>
-
+    <script src="data/questions.js"></script>
+    <script src="data/scopes.js"></script>
     <script src="quiz.js"></script>
   </body>
 </html>
