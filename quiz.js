@@ -125,24 +125,30 @@ function handleOptionClick(currentQuestion, e) {
       // Disable all the answer buttons to prevent changing the answer
       button.disabled = true;
       if (button === e.target) {
-        if (currentQuestion.options.find((option) => option.text === e.target.textContent.split(') ')[1]).isCorrect) {
+        const selectedOptionText = e.target.textContent.split(') ')[1];
+        const selectedOption = currentQuestion.options.find((option) => option.text === selectedOptionText);
+
+        if (selectedOption && selectedOption.hasOwnProperty('isCorrect') && selectedOption.isCorrect) {
           score++;
           // If the selected option is correct, turn the button green
           e.target.classList.add('correct-answer');
         } else {
           // Show the correct answer when the user selects the wrong option
           explanationContainer.style.display = 'block';
-          explanationDisplay.innerHTML = 'Explanation : ' + getCorrectAnswerExplanation(currentQuestion);
+          explanationDisplay.innerHTML = 'Explanation: ' + getCorrectAnswerExplanation(currentQuestion);
           // If the selected option is wrong, turn the button red
           e.target.classList.add('wrong-answer');
         }
-      } else if (
-        currentQuestion.options.find((option) => option.text === button.textContent.split(') ')[1]).isCorrect
-      ) {
-        // For other buttons, if the option is correct, turn it green
-        button.classList.add('correct-answer');
       } else {
-        button.classList.add('disabled-answer-button');
+        const buttonOptionText = button.textContent.split(') ')[1];
+        const buttonOption = currentQuestion.options.find((option) => option.text === buttonOptionText);
+
+        if (buttonOption && buttonOption.hasOwnProperty('isCorrect') && buttonOption.isCorrect) {
+          // For other buttons, if the option is correct, turn it green
+          button.classList.add('correct-answer');
+        } else {
+          button.classList.add('disabled-answer-button');
+        }
       }
     });
 

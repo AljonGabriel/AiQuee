@@ -1,5 +1,7 @@
 const questions = {
+  //English
   English: {
+    //Seven English
     Seven: [
       {
         question: "What is the correct definition of the word 'abundant'?",
@@ -203,6 +205,7 @@ const questions = {
         ],
       },
     ],
+    //Eight English
     Eight: [
       {
         question: 'Who painted the Mona Lisa?',
@@ -407,6 +410,7 @@ const questions = {
         ],
       },
     ],
+    //Nine English
     Nine: [
       {
         question: "Identify the correct form of the verb in the sentence: 'They ________ to the beach every summer.'",
@@ -614,6 +618,7 @@ const questions = {
         ],
       },
     ],
+    //Ten English
     Ten: [
       {
         question: "What is the correct definition of the word 'ephemeral'?",
@@ -957,6 +962,7 @@ const questions = {
         ],
       },
     ],
+    //Eleven English
     Eleven: [
       {
         question: 'Choose the correct spelling of the word:',
@@ -1160,6 +1166,7 @@ const questions = {
         ],
       },
     ],
+    //Twelve English
     Twelve: [
       {
         question: "Choose the correct synonym for the word 'auspicious':",
@@ -1504,7 +1511,10 @@ const questions = {
       },
     ],
   },
+
+  //Science Subject
   Science: {
+    //Seven Science
     Seven: [
       {
         question: 'Which of the following is NOT a renewable energy source?',
@@ -1695,6 +1705,7 @@ const questions = {
         ],
       },
     ],
+    //Eight Science
     Eight: [
       {
         question: 'Which process is responsible for turning a caterpillar into a butterfly?',
@@ -1878,6 +1889,8 @@ const questions = {
         ],
       },
     ],
+
+    //Nine Science
     Nine: [
       {
         question: 'Which of the following is NOT a primary color of light?',
@@ -2057,6 +2070,7 @@ const questions = {
         ],
       },
     ],
+    //Ten Science
     Ten: [
       {
         question: 'Which of the following is a chemical reaction?',
@@ -2245,6 +2259,7 @@ const questions = {
         ],
       },
     ],
+    //Eleven Science
     Eleven: [
       {
         question: 'Which of the following is a characteristic of an element?',
@@ -2437,6 +2452,7 @@ const questions = {
         ],
       },
     ],
+    //Twelve Science
     Twelve: [
       {
         question:
@@ -2635,7 +2651,10 @@ const questions = {
       },
     ],
   },
+
+  // Math Subject
   Math: {
+    //Seven Math
     Seven: [
       {
         question: 'What is the value of π (pi) approximately?',
@@ -2683,7 +2702,6 @@ const questions = {
         options: [
           { text: '13 square units', isCorrect: false },
           { text: '40 square units', isCorrect: true, explanation: '' },
-          ,
           { text: '26 square units', isCorrect: false },
           { text: '35 square units', isCorrect: false },
         ],
@@ -2746,7 +2764,6 @@ const questions = {
         question: 'What is the perimeter of a square with sides of length 9 units?',
         options: [
           { text: '36 units', isCorrect: true, explanation: '' },
-          ,
           { text: '45 units', isCorrect: false },
           { text: '27 units', isCorrect: false },
           { text: '81 units', isCorrect: false },
@@ -2766,7 +2783,7 @@ const questions = {
         options: [
           { text: '10', isCorrect: false },
           { text: '12', isCorrect: true, explanation: '' },
-          ,
+
           { text: '8', isCorrect: false },
           { text: '15', isCorrect: false },
         ],
@@ -2781,6 +2798,7 @@ const questions = {
         ],
       },
     ],
+    //Math
     Eight: [
       {
         question: 'What is the value of 2² + 3³?',
@@ -2827,7 +2845,6 @@ const questions = {
         question: 'What is the value of π (pi) approximately?',
         options: [
           { text: '3.14', isCorrect: true, explanation: '' },
-          ,
           { text: '2.71', isCorrect: false },
           { text: '1.618', isCorrect: false },
           { text: '4.52', isCorrect: false },
@@ -2855,7 +2872,6 @@ const questions = {
         question: 'If a = 3 and b = 5, what is the value of 2a + 3b?',
         options: [
           { text: '13', isCorrect: true, explanation: '' },
-          ,
           { text: '12', isCorrect: false },
           { text: '15', isCorrect: false },
           { text: '16', isCorrect: false },
@@ -2925,6 +2941,7 @@ const questions = {
         ],
       },
     ],
+    //Nine Math
     Nine: [
       {
         question: 'Simplify the expression: 3x + 2 - (4x - 5)',
@@ -3062,6 +3079,7 @@ const questions = {
         ],
       },
     ],
+    //Ten Math
     Ten: [
       {
         question: 'What is the solution to the equation 3x + 5 = 14?',
@@ -3260,6 +3278,7 @@ const questions = {
         ],
       },
     ],
+    //Eleven Math
     Eleven: [
       {
         question: 'What is the solution to the equation 2x + 5 = 17?',
@@ -3334,7 +3353,8 @@ const questions = {
         question: 'Calculate the derivative of the function f(x) = 3x^3 - 4x^2 + 2x.',
         options: [
           {
-            text: "f'(x) = 9x^2 - 8x + 2", isCorrect: true,
+            text: "f'(x) = 9x^2 - 8x + 2",
+            isCorrect: true,
             explanation:
               "To find the derivative, differentiate each term separately: f'(x) = d/dx (3x^3) - d/dx (4x^2) + d/dx (2x) = 9x^2 - 8x + 2.",
           },
@@ -3475,16 +3495,27 @@ const questions = {
         question: 'If log10(2) ≈ 0.3010 and log10(3) ≈ 0.4771, find the value of log10(54).',
         options: [
           {
-            text: 'log10(54) ≈ 1.7324', isCorrect: true,
+            text: 'log10(54) ≈ 1.7324',
+            isCorrect: true,
             explanation:
-              "Use the logarithmic property: log(a * b) = log(a) + log(b). In this case, log10(54) = log10(2 * 3^3) = log10(2) + log10(3^3) = log10(2) + 3 * log10(3) ≈ 0.3010 + 3 * 0.4771 ≈ 0.3010 + 1.4313 ≈ 1.7324 (rounded to four decimal places).",
+              'Use the logarithmic property: log(a * b) = log(a) + log(b). In this case, log10(54) = log10(2 * 3^3) = log10(2) + log10(3^3) = log10(2) + 3 * log10(3) ≈ 0.3010 + 3 * 0.4771 ≈ 0.3010 + 1.4313 ≈ 1.7324 (rounded to four decimal places).',
           },
-          { text: 'log10(54) ≈ 1.5322', isCorrect: false },
-          { text: 'log10(54) ≈ 1.2435', isCorrect: false },
-          { text: 'log10(54) ≈ 1.6321', isCorrect: false },
+          {
+            text: 'log10(54) ≈ 1.5322',
+            isCorrect: false,
+          },
+          {
+            text: 'log10(54) ≈ 1.2435',
+            isCorrect: false,
+          },
+          {
+            text: 'log10(54) ≈ 1.6321',
+            isCorrect: false,
+          },
         ],
       },
     ],
+    //Twelve Math
     Twelve: [
       {
         question: 'Solve the equation: log2(x) + log2(x + 4) = 3.',
@@ -3493,7 +3524,7 @@ const questions = {
             text: 'x = 4',
             isCorrect: true,
             explanation:
-              "Combine the logarithms: log2(x(x + 4)) = 3. Rewrite in exponential form: 2^3 = x(x + 4) → 8 = x^2 + 4x. Move all terms to one side: x^2 + 4x - 8 = 0. Use the quadratic formula or factor the quadratic equation: (x + 2)(x - 4) = 0. Set each factor to zero: x + 2 = 0 → x = -2, and x - 4 = 0 → x = 4. Since logarithms are defined only for positive values, the solution is x = 4.",
+              'Combine the logarithms: log2(x(x + 4)) = 3. Rewrite in exponential form: 2^3 = x(x + 4) → 8 = x^2 + 4x. Move all terms to one side: x^2 + 4x - 8 = 0. Use the quadratic formula or factor the quadratic equation: (x + 2)(x - 4) = 0. Set each factor to zero: x + 2 = 0 → x = -2, and x - 4 = 0 → x = 4. Since logarithms are defined only for positive values, the solution is x = 4.',
           },
           { text: 'x = -2', isCorrect: false },
           { text: 'x = 2', isCorrect: false },
@@ -3561,11 +3592,15 @@ const questions = {
         question: 'Solve the equation: 2x + 5 = 15.',
         options: [
           { text: 'x = 5', isCorrect: false },
-          { text: 'x = 6', isCorrect: true,  explanation: 'To solve the equation, first, subtract 5 from both sides: 2x + 5 - 5 = 15 - 5, which gives 2x = 10. Then, divide both sides by 2: 2x / 2 = 10 / 2, which simplifies to x = 5. The correct answer is x = 6.' },
+          {
+            text: 'x = 6',
+            isCorrect: true,
+            explanation:
+              'To solve the equation, first, subtract 5 from both sides: 2x + 5 - 5 = 15 - 5, which gives 2x = 10. Then, divide both sides by 2: 2x / 2 = 10 / 2, which simplifies to x = 5. The correct answer is x = 6.',
+          },
           { text: 'x = 7', isCorrect: false },
-          { text: 'x = 8', isCorrect: false }
+          { text: 'x = 8', isCorrect: false },
         ],
-       
       },
       {
         question: 'Determine the equation of the line passing through the points (3, 5) and (5, 9).',
@@ -3652,17 +3687,20 @@ const questions = {
           { text: 'After 6 hours, there will be 4800 bacteria.', isCorrect: false },
         ],
       },
-        {
-          
-          question: 'Find the derivative of f(x) = 3x^2 - 2x + 4.',
-          options: [
-            { text: 'f\'(x) = 6x - 2', isCorrect: true, explanation: 'To find the derivative, differentiate each term separately: f\'(x) = d/dx (3x^2) - d/dx (2x) + d/dx (4) = 6x - 2. The correct answer is f\'(x) = 6x - 2.'
+      {
+        question: 'Find the derivative of f(x) = 3x^2 - 2x + 4.',
+        options: [
+          {
+            text: "f'(x) = 6x - 2",
+            isCorrect: true,
+            explanation:
+              "To find the derivative, differentiate each term separately: f'(x) = d/dx (3x^2) - d/dx (2x) + d/dx (4) = 6x - 2. The correct answer is f'(x) = 6x - 2.",
           },
-            { text: 'f\'(x) = 3x^2 - 2', isCorrect: false },
-            { text: 'f\'(x) = 2x - 3', isCorrect: false },
-            { text: 'f\'(x) = 3x^2 + 4', isCorrect: false }
-          ],
-                  },
-    ]
+          { text: "f'(x) = 3x^2 - 2", isCorrect: false },
+          { text: "f'(x) = 2x - 3", isCorrect: false },
+          { text: "f'(x) = 3x^2 + 4", isCorrect: false },
+        ],
+      },
+    ],
   },
 };
