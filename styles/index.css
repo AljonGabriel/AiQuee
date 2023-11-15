@@ -53,3 +53,28 @@
 .quiz-scope-container {
   display: none;
 }
+
+.background-container .bg-png {
+  animation: flash 4s linear infinite alternate;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.bg-png {
+  width: 100%; /* Make the images responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images don't exceed their natural size */
+}
+
+@media (min-width: 768px) {
+  /* Apply styles only when the screen width is 768px or larger (adjust as needed) */
+  .bg-png {
+    position: absolute;
+    left: 50px;
+  }
+}

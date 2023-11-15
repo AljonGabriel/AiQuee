@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="BGAnimation.js" defer></script>
     <title>Aiquee</title>
   </head>
   <body>
     <main>
-      <section
-        class="container-fluid d-flex align-items-center justify-content-center vh-100"
-      >
-        <section class="row align-items-center justify-content-center">
-          <div class="col-sm-12 col-lg-8">
-            <h3 class="fs-1">
-              Welcome to <b style="color: var(--Primary-Color)">AiQ</b>
-            </h3>
-            <p class="fs-4">The best way to learn is to Answer Questions</p>
-
-            <div class="upper-btn-container">
-              <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
-              <a href="quiz.html" class="btn btn-outline-primary">Contact</a>
+      <section class="container-fluid container-lg background-container vh-100">
+        <section
+          class="position-absolute top-50 start-50 translate-middle p-5 rounded-2"
+        >
+          <div class="row align-items-center justify-content-center gap-0">
+            <div class="col-auto">
+              <figure>
+                <img src="assets/logo/1x/Asset 3.png" alt="Logo" width="200" />
+              </figure>
             </div>
-          </div>
-          <div class="col-sm-12 col-lg-4">
-            <figure class="upper-logo-container d-none d-sm-block">
-              <img src="assets/logo/1x/Asset 3.png" alt="Logo" />
-            </figure>
+            <div class="col-auto text-center text-lg-left">
+              <h3 class="fs-1">
+                Welcome to <b style="color: var(--Primary-Color)">AiQ</b>
+              </h3>
+              <p class="text-secondary">
+                The best way to learn is to Answer Questions
+              </p>
+
+              <div class="upper-btn-container">
+                <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
+                <a href="quiz.html" class="btn btn-outline-primary">Contact</a>
+              </div>
+            </div>
           </div>
         </section>
       </section>
+
       <section class="container-fluid vh-100 bg-primary">
         <section class="container">
           <h1 class="text-white text-center py-5">Under Construct</h1>
