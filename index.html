@@ -2,66 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/index.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <title>Aiquee</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-logo-container">
-          <img
-            src="assets/logo/1x/Asset 3.png"
-            alt="Logo"
-          />
-          <h2>AiQuee</h2>
-        </div>
-        <div class="nav-lists-container">
-          <ul class="nav-ul">
-            <li class="nav-li active-link"><a href="">Home</a></li>
-            <li class="nav-li"><a href="">Login</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
     <main>
-      <div class="upper-container">
-        <div class="upper-quiz-container">
-          <h2>
-            Welcome to
-            <b style="color: var(--Primary-Color); text-transform: uppercase"
-              >AiQuee</b
-            >
-          </h2>
-          <p>The best way to learn is to Answer Questions</p>
+      <section
+        class="container-fluid d-flex align-items-center justify-content-center vh-100"
+      >
+        <section class="row align-items-center justify-content-center">
+          <div class="col-sm-12 col-lg-8">
+            <h3 class="fs-1">
+              Welcome to <b style="color: var(--Primary-Color)">AiQ</b>
+            </h3>
+            <p class="fs-4">The best way to learn is to Answer Questions</p>
 
-          <div class="upper-btn-container">
-            <a
-              href="quiz.html"
-              class="start-Quiz-btn"
-              >Start Quiz</a
-            >
-            <a
-              href="quiz.html"
-              class="contact-btn"
-              >Contact</a
-            >
+            <div class="upper-btn-container">
+              <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
+              <a href="quiz.html" class="btn btn-outline-primary">Contact</a>
+            </div>
           </div>
-        </div>
-        <div class="upper-logo-container">
-          <img
-            src="assets/logo/1x/Asset 3.png "
-            alt="Logo"
-          />
-        </div>
-      </div>
+          <div class="col-sm-12 col-lg-4">
+            <figure class="upper-logo-container d-none d-sm-block">
+              <img src="assets/logo/1x/Asset 3.png" alt="Logo" />
+            </figure>
+          </div>
+        </section>
+      </section>
+      <section class="container-fluid vh-100 bg-primary">
+        <section class="container">
+          <h1 class="text-white text-center py-5">Under Construct</h1>
+        </section>
+      </section>
     </main>
   </body>
 </html>
