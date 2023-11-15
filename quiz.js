@@ -147,14 +147,15 @@ function handleOptionClick(currentQuestion, e) {
         ) {
           score++;
           // If the selected option is correct, turn the button green
-          e.target.classList.add("correct-answer");
+          e.target.classList.add("border-success", "border-3");
         } else {
           // Show the correct answer when the user selects the wrong option
           explanationContainer.style.display = "block";
+          explanationDisplay.classList.add("text-danger", "my-3");
           explanationDisplay.innerHTML =
             "Explanation: " + getCorrectAnswerExplanation(currentQuestion);
           // If the selected option is wrong, turn the button red
-          e.target.classList.add("wrong-answer");
+          e.target.classList.add("border-danger", "border-3");
         }
       } else {
         const buttonOptionText = button.textContent.split(") ")[1];
@@ -168,7 +169,7 @@ function handleOptionClick(currentQuestion, e) {
           buttonOption.isCorrect
         ) {
           // For other buttons, if the option is correct, turn it green
-          button.classList.add("correct-answer");
+          button.classList.add("border-success", "border-3");
         } else {
           button.classList.add("disabled-answer-button");
         }
@@ -178,7 +179,7 @@ function handleOptionClick(currentQuestion, e) {
     // Create Next Question Button
     const nextQuestionButton = document.createElement("button");
     nextQuestionButton.setAttribute("id", "nextQuestion");
-    nextQuestionButton.classList.add("quiz-next-question-button");
+    nextQuestionButton.classList.add("btn", "btn-outline-secondary", "my-3");
     nextQuestionButton.textContent = "Next";
 
     // Use appendChild to add the nextQuestionButton to the nextQuestionContainer
@@ -187,7 +188,7 @@ function handleOptionClick(currentQuestion, e) {
     nextQuestionButton.addEventListener("click", () => {
       // Clear visual indication and re-enable the answer buttons
       answerButtons.forEach((button) => {
-        button.classList.remove("correct-answer", "wrong-answer");
+        button.classList.remove("is-valid", "is-invalid");
         button.disabled = false;
       });
 
@@ -233,7 +234,8 @@ function createQuestions() {
     questionDiv.classList.add("quiz-question-container");
 
     // Display the question
-    const questionElement = document.createElement("h2");
+    const questionElement = document.createElement("h3");
+    questionElement.classList.add("my-3");
     questionElement.textContent =
       currentQuestionIndex + 1 + ".) " + currentQuestion.question;
     questionDiv.appendChild(questionElement);
@@ -248,7 +250,12 @@ function createQuestions() {
       const option = currentQuestion.options[i];
       const optionItemElement = document.createElement("button");
       optionItemElement.setAttribute("id", "answerButton");
-      optionItemElement.classList.add("answer-button");
+      optionItemElement.classList.add(
+        "btn",
+        "btn-outline-primary",
+        "m-1",
+        "answer-button",
+      );
       optionItemElement.textContent = letters[i] + ") " + option.text;
 
       optionItemElement.addEventListener("click", (e) => {
