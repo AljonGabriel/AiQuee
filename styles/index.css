@@ -45,7 +45,7 @@ h2.text-primary {
   color: var(--Font-Hover) !important;
 }
 
-.bg-primary {
+section.bg-primary {
   background-color: var(--Accent) !important;
 }
 
@@ -55,7 +55,8 @@ h2.text-primary {
 }
 
 .explanation-container,
-.quiz-scope-container {
+.quiz-scope-container,
+.quiz-body-container {
   display: none;
 }
 
@@ -75,7 +76,11 @@ h2.text-primary {
   font-size: 25px;
 }
 
-.result, .quiz-header {
+.result,
+.quiz-header {
   display: none;
 }
 
+.nav-link {
+  color: var(--Text-Color) !important;
+}

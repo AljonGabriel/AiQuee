@@ -77,7 +77,7 @@ function createImageElement(src, {x, y}, delay) {
   img.style.left = `${x}px`;
   img.style.top = `${y}px`;
   img.style.zIndex = "-1";
-  img.style.opacity = "0.3";
+  img.style.opacity = "0.1";
   img.style.animationDelay = `${delay}s`;
 
   document.querySelector(".background-container").appendChild(img);

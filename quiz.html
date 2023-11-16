@@ -4,126 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
-    
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <script src="BGAnimation.js" defer></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
     <title>Quiz</title>
   </head>
   <body>
-    <main class="container-fluid vh-100 bg-light">
-      <section class="container  background-container">
-        <div class="row">
-          <div class="col ">
-                <section class="p-5 bg-white" id="quizMechanicsContainer">
-                  <header >
-                    <h2 class="fs-1 text-center my-3 text-primary">Let's Begin</h2>
-                    <h5><b>Instruction :</b></h5>
-                    <p class="text-secondary">To begin the quiz, select your preferred subject and grade level from the dropdown menus. You have a total of 15 minutes to answer four multiple-choice questions. The timer is displayed at the top, and it will count down as you progress through the quiz. Once you've selected your answers, click the 'Submit' button to see your results. Take your time, and good luck with the quiz!</p>
-                  </header>
-                  <div class="form-group">
-                    <label for="inputUserName" class="mb-1">Enter name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputUserName"
-                      aria-describedby="emailHelp"
-                      placeholder="Challenger name"
-                    />
-                  </div>
-      
-                  <section class="my-3">
-                    <section class="form-group">
-                      <label for="subjects" class="mb-1">Choose Subject</label>
-                      <select name="subjects" id="subjects" class="form-control">
-                        <option value="" selected disabled>...</option>
-                        <option value="English">English</option>
-                        <option value="Math">Math</option>
-                        <option value="Science">Science</option>
-                        <option value="Filipino">Filipino</option>
-                      </select>
-                    </section>
-                  </section>
-      
-                  <section class="my-3">
-                    <section class="form-group">
-                      <label for="gradeLevel" class="mb-1">Choose Grade</label>
-                      <select name="gradeLevel" id="gradeLevel" class="form-control">
-                        <option value="" selected disabled>...</option>
-                        <option value="Seven">7</option>
-                        <option value="Eight">8</option>
-                        <option value="Nine">9</option>
-                        <option value="Ten">10</option>
-                        <option value="Eleven">11</option>
-                        <option value="Twelve">12</option>
-                      </select>
-                    </section>
-                    <small id="emailHelp" class="form-text text-muted"
-                      >Please choose your current grade level in school</small
-                    >
-                  </section>
-                  <section class="my-3">
-                    <button onclick="{getScope()}" class="btn btn-primary">
-                      Next
-                    </button>
-                    <a href="index.html" class="btn btn-outline-secondary"> Back </a>
-                  </section>
-                </section>
-         
-    
-                <section class="quiz-scope-container bg-white p-5" id="quizScopeContainer">
-                  <header class="my-3">
-                    <h2 class="fs-1">SCOPE</h2>
-                    <small class="text-secondary"
-                      >This the scope of the Subject and grade you chose</small
-                    >
-                  </header>
-                  <section class="w-100" id="scope"></section>
-                  <section class="quiz-starting-game">
-                    <button id="quizStartButton" class="btn btn-primary">
-                      Start Quiz
-                    </button>
-                    <a href="quiz.html" class="btn btn-outline-secondary"> Back </a>
-                  </section>
-                </section>
-                
-                <section class="p-5 bg-white" id="quizBodyContainer">
-                  <section
-                  class="quiz-header bg-white"
-                  id="quizScopeHeaderContainer"
-                >
-                    <p class="d-block my-1"><strong>Challenger : </strong><i id="userName"></i></h5>
-                    <p class="d-block my-1"><strong>Subject : </strong><i id="chosenSubject"></i></h5>
-                    <p class="d-block my-1"><strong>Grade : </strong><i id="chosenGrade"></i></h5>
-                    <p class="d-block my-1"><strong>Timer : </strong><i id="timer">15:00</i></h5>
-                </section>
-                  <div
-                    class="text-left"
-                    id="quizQuestionsOptionsContainer"
-                  ></div>
-      
-                  <section class="explanation-container" id="explanationContainer">
-                    <small id="explanationDisplay" class="quiz-explanation"></sma>
-                  </section>
-      
-                  <section
-                    id="nextQuestionContainer"
-                    class="next-question-container"
-                  ></section>
-                </section>
-          
-                <section id="resultContainer" class="text-center result position-absolute top-50 start-50 translate-middle">
-                  <h1 id="score"></h3>
-                  <a href="quiz.html" class="btn btn-secondary">Try Again ?</a>
-                  <small id="feedback"></small>
-                </section>
-        
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <figure class="navbar-brand">
+            <img src="assets/logo/1x/Asset 1.png" alt="" width="50" />
+          </figure>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="#">Features</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <main class="container-fluid bg-white ">
+      <section class="container">
+        <section>
+          <section class="p-5 bg-white m-auto" id="quizMechanicsContainer">
+            <header >
+              <h2 class="fs-1 text-center my-3 text-primary">Let's Begin</h2>
+              <h5><b>Instruction :</b></h5>
+              <p class="text-secondary">To begin the quiz, select your preferred subject and grade level from the dropdown menus. You have a total of 15 minutes to answer four multiple-choice questions. The timer is displayed at the top, and it will count down as you progress through the quiz. Once you've selected your answers, click the 'Submit' button to see your results. Take your time, and good luck with the quiz!</p>
+            </header>
+            <div class="form-group">
+              <label for="inputUserName" class="mb-1">Enter name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputUserName"
+                aria-describedby="emailHelp"
+                placeholder="Challenger name"
+              />
+            </div>
+
+            <section class="my-3">
+              <section class="form-group">
+                <label for="subjects" class="mb-1">Choose Subject</label>
+                <select name="subjects" id="subjects" class="form-control">
+                  <option value="" selected disabled>...</option>
+                  <option value="English">English</option>
+                  <option value="Math">Math</option>
+                  <option value="Science">Science</option>
+                  <option value="Filipino">Filipino</option>
+                </select>
+              </section>
+            </section>
+
+            <section class="my-3">
+              <section class="form-group">
+                <label for="gradeLevel" class="mb-1">Choose Grade</label>
+                <select name="gradeLevel" id="gradeLevel" class="form-control">
+                  <option value="" selected disabled>...</option>
+                  <option value="Seven">7</option>
+                  <option value="Eight">8</option>
+                  <option value="Nine">9</option>
+                  <option value="Ten">10</option>
+                  <option value="Eleven">11</option>
+                  <option value="Twelve">12</option>
+                </select>
+              </section>
+              <small id="emailHelp" class="form-text text-muted"
+                >Please choose your current grade level in school</small
+              >
+            </section>
+            <section class="my-3">
+              <button onclick="{getScope()}" class="btn btn-primary">
+                Next
+              </button>
+              <a href="index.html" class="btn btn-outline-secondary"> Back </a>
+            </section>
+          </section>
+   
+
+          <section class="quiz-scope-container bg-white p-5" id="quizScopeContainer">
+            <header class="my-3">
+              <h2 class="fs-1">SCOPE</h2>
+              <small class="text-secondary"
+                >This the scope of the Subject and grade you chose</small
+              >
+            </header>
+            <section class="w-100" id="scope"></section>
+            <section class="quiz-starting-game">
+              <button id="quizStartButton" class="btn btn-primary">
+                Start Quiz
+              </button>
+              <a href="quiz.html" class="btn btn-outline-secondary"> Back </a>
+            </section>
+          </section>
+          
+          <section class="p-5 bg-white w-100 quiz-body-container" id="quizBodyContainer">
+            <section
+            class="quiz-header bg-white text-center"
+            id="quizScopeHeaderContainer">
+              <p class="d-inline mx-2 "><strong class="text-primary">Challenger : </strong><i id="userName"></i></h5>
+              <p class="d-inline mx-2"><strong class="text-primary">Subject : </strong><i id="chosenSubject"></i></h5>
+              <p class="d-inline mx-2"><strong class="text-primary">Grade : </strong><i id="chosenGrade"></i></h5>
+              <p class="d-inline mx-2"><strong class="text-primary">Timer : </strong><i id="timer">15:00</i></h5>
+          </section>
+          <hr>
+          <div class="d-flex align-items-center justify-content-center text-center">
+            <div
+            class="container text-left"
+            id="quizQuestionsOptionsContainer"
+          ></div>
+          </div>
+ 
+       
+       
+            <hr>
+
+            <section class="explanation-container" id="explanationContainer">
+              <p id="explanationDisplay" class="quiz-explanation"></p>
+            </section>
+
+            <section
+              id="nextQuestionContainer"
+              class="next-question-container"
+            >
+         
+          </section>
+          </section>
+    
+          <section id="resultContainer" class="text-center result position-absolute top-50 start-50 translate-middle">
+            <h1 id="score" class="fs-1 my-3"></h3>
+            <a href="quiz.html" class="btn btn-secondary">Try Again ?</a>
+            <p id="feedback" class="d-block text-danger fs-1"></p>
+          </section>
+
+        </section>
+             
       </section>
   
       

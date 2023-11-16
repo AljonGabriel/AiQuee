@@ -11,8 +11,7 @@ const userNameDisplay = document.querySelector("#userName"),
   scopeDisplay = document.querySelector("#scope");
 
 //container
-const 
-  quizBodyContainer = document.querySelector("#quizBodyContainer"),
+const quizBodyContainer = document.querySelector("#quizBodyContainer"),
   quizScopeContainer = document.querySelector("#quizScopeContainer"),
   quizScopeHeaderContainer = document.querySelector(
     "#quizScopeHeaderContainer",
@@ -29,7 +28,8 @@ const answerButton = document.querySelectorAll("#answerButton"),
 
 //subjects
 
-const subjects = document.getElementById("subjects"), grades = document.getElementById("gradeLevel");
+const subjects = document.getElementById("subjects"),
+  grades = document.getElementById("gradeLevel");
 
 let chosenSubject,
   chosenGrade,
@@ -70,9 +70,9 @@ function getScope() {
 
   const scopeHTML = `
   <p>${scopeDescription}</p>
-  <ul><br>
+  <ul>
     <li>${bulletPointsHTML}</li>
-  </ul><br>
+  </ul>
   <p>${overallScope}</p>
 `;
 
@@ -86,6 +86,7 @@ startGame.addEventListener("click", () => {
 
   quizScopeContainer.style.display = "none";
   quizScopeHeaderContainer.style.display = "block";
+  quizBodyContainer.style.display = "block";
 
   // Shuffle the questions only once when the quiz starts
   const shuffledQuestions = shuffleArray(
@@ -112,12 +113,9 @@ function shuffleArray(array) {
 }
 
 function handleOptionClick(currentQuestion, e) {
-  const nextQuestionContainer = document.querySelector(
-    "#nextQuestionContainer",
-  );
   const answerButtons = document.querySelectorAll(".answer-button");
 
-  if (e.target.nodeName === "BUTTON") {
+  if (e.target.classList.contains("answer-button")) {
     answerButtons.forEach((button) => {
       // Disable all the answer buttons to prevent changing the answer
       button.disabled = true;
@@ -140,7 +138,7 @@ function handleOptionClick(currentQuestion, e) {
           explanationContainer.style.display = "block";
           explanationDisplay.classList.add("text-danger", "my-3");
           explanationDisplay.innerHTML =
-            "Explanation: " + getCorrectAnswerExplanation(currentQuestion);
+            getCorrectAnswerExplanation(currentQuestion);
           // If the selected option is wrong, turn the button red
           e.target.classList.add("border-danger", "border-3");
         }
@@ -166,9 +164,17 @@ function handleOptionClick(currentQuestion, e) {
     // Create Next Question Button
     const nextQuestionButton = document.createElement("button");
     nextQuestionButton.setAttribute("id", "nextQuestion");
-    nextQuestionButton.classList.add("btn", "btn-outline-secondary", "my-3");
-    nextQuestionButton.textContent = "Next";
+    nextQuestionButton.classList.add(
+      "btn",
+      "btn-outline-secondary",
+      "btn-lg",
+      "my-3",
+    );
+    nextQuestionButton.textContent = "Next Question";
 
+    const nextQuestionContainer = document.getElementById(
+      "nextQuestionContainer",
+    );
     // Use appendChild to add the nextQuestionButton to the nextQuestionContainer
     nextQuestionContainer.appendChild(nextQuestionButton);
 
@@ -240,9 +246,10 @@ function createQuestions() {
       optionItemElement.classList.add(
         "btn",
         "btn-outline-primary",
+        "btn-lg",
         "m-1",
+        "w-50",
         "answer-button",
-        "d-block"
       );
       optionItemElement.textContent = letters[i] + ") " + option.text;
 
@@ -254,7 +261,7 @@ function createQuestions() {
 
     quizQuestionsOptionsContainer.appendChild(optionsDiv);
 
-    // Add the question div to the quiz container
+    console.log("Create Question", currentQuestionIndex);
   }
 }
 
@@ -266,6 +273,7 @@ function countDownTimer() {
     clearInterval(countDownTimer);
     quizQuestionsOptionsContainer.innerHTML = "";
     quizScopeHeaderContainer.style.display = "none";
+    quizBodyContainer.style.display = "none";
     explanationContainer.innerHTML = "";
     getResult();
   } else if (timer === 0) {
@@ -273,7 +281,8 @@ function countDownTimer() {
     quizQuestionsOptionsContainer.innerHTML = "";
     quizScopeHeaderContainer.style.display = "none";
     explanationContainer.style.display = "none";
-    nextQuestionContainer.style.display = "none";
+    quizBodyContainer.style.display = "none";
+    explanationContainer.innerHTML = "";
     getResult();
   }
 }
