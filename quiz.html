@@ -4,204 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="BGAnimation.js" defer></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
     <title>Quiz</title>
   </head>
   <body>
-    <main class="container-fluid vh-100 bg-light">
-      <section class="container">
-        <section
-          class="d-grid bg-white p-3 p-lg-5 rounded-5 rounded-3 m-lg-auto"
-        >
-          <section id="quizMechanicsContainer">
-            <header class="my-3 text-center">
-              <h2 class="fs-1">Let us know you</h2>
-              <small class="text-secondary"
-                >The higher the grade is the harder the challenge !</small
-              >
-            </header>
-            <div class="form-group">
-              <label for="inputUserName" class="mb-1">Enter name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputUserName"
-                aria-describedby="emailHelp"
-                placeholder="Challenger name"
-              />
-            </div>
-
-            <section class="mt-3">
-              <label class="d-block mb-1">Choose Subject</label>
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="subject"
-                    id="englishSubject"
-                    autocomplete="off"
-                    value="English"
-                  />
-                  English
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="subject"
-                    id="scienceSubject"
-                    autocomplete="off"
-                    value="Science"
-                  />
-                  Science
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="subject"
-                    id="mathSubject"
-                    autocomplete="off"
-                    value="Math"
-                  />
-                  Math
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="subject"
-                    id="filipinoSubject"
-                    autocomplete="off"
-                    value="Filipino"
-                  />
-                  Filipino
-                </label>
-              </div>
-            </section>
-
-            <section class="mt-3">
-              <label class="d-block mb-1">Select Grade</label>
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade7"
-                    autocomplete="off"
-                    value="Seven"
-                  />
-                  Grade 7
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade8"
-                    autocomplete="off"
-                    value="Eight"
-                  />
-                  Grade 8
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade9"
-                    autocomplete="off"
-                    value="Nine"
-                  />
-                  Grade 9
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade10"
-                    autocomplete="off"
-                    value="Ten"
-                  />
-                  Grade 10
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade11"
-                    autocomplete="off"
-                    value="Eleven"
-                  />
-                  Grade 11
-                </label>
-
-                <label class="btn btn-outline-primary">
-                  <input
-                    type="radio"
-                    name="grade"
-                    id="grade12"
-                    autocomplete="off"
-                    value="Twelve"
-                  />
-                  Grade 12
-                </label>
-              </div>
-            </section>
-
-            <section class="my-3">
-              <button onclick="{getScope()}" class="btn btn-primary">
-                Next
-              </button>
-              <a href="index.html" class="btn btn-outline-secondary"> Back </a>
-            </section>
-          </section>
-          <div
-            class="quiz-scope-header-container"
-            id="quizScopeHeaderContainer"
-          >
-            <span id="userName" class="user-name"></span>
-            <span id="chosenSubject" class="chosen-subject"></span>
-            <span id="chosenGrade" class="chosen-grade"></span>
-            <span class="timer" id="timer"></span>
+    <main class="container-fluid vh-100  pt-5 ">
+      <section class="container  background-container">
+        <div class="row">
+          <div class="col ">
+                <section class="p-5 bg-white" id="quizMechanicsContainer">
+                  <header >
+                    <h2 class="fs-1 text-center my-3 text-primary">Let's Begin</h2>
+                    <h5><b>Instruction :</b></h5>
+                    <p class="text-secondary">To begin the quiz, select your preferred subject and grade level from the dropdown menus. You have a total of 15 minutes to answer four multiple-choice questions. The timer is displayed at the top, and it will count down as you progress through the quiz. Once you've selected your answers, click the 'Submit' button to see your results. Take your time, and good luck with the quiz!</p>
+                  </header>
+                  <div class="form-group">
+                    <label for="inputUserName" class="mb-1">Enter name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputUserName"
+                      aria-describedby="emailHelp"
+                      placeholder="Challenger name"
+                    />
+                  </div>
+      
+                  <section class="my-3">
+                    <section class="form-group">
+                      <label for="subjects" class="mb-1">Choose Subject</label>
+                      <select name="subjects" id="subjects" class="form-control">
+                        <option value="" selected disabled>...</option>
+                        <option value="English">English</option>
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                        <option value="Filipino">Filipino</option>
+                      </select>
+                    </section>
+                  </section>
+      
+                  <section class="my-3">
+                    <section class="form-group">
+                      <label for="gradeLevel" class="mb-1">Choose Grade</label>
+                      <select name="gradeLevel" id="gradeLevel" class="form-control">
+                        <option value="" selected disabled>...</option>
+                        <option value="Seven">7</option>
+                        <option value="Eight">8</option>
+                        <option value="Nine">9</option>
+                        <option value="Ten">10</option>
+                        <option value="Eleven">11</option>
+                        <option value="Twelve">12</option>
+                      </select>
+                    </section>
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Please choose your current grade level in school</small
+                    >
+                  </section>
+                  <section class="my-3">
+                    <button onclick="{getScope()}" class="btn btn-primary">
+                      Next
+                    </button>
+                    <a href="index.html" class="btn btn-outline-secondary"> Back </a>
+                  </section>
+                </section>
+                <section
+                  class="quiz-scope-header-container"
+                  id="quizScopeHeaderContainer"
+                >
+                  <span id="userName" class="user-name"></span>
+                  <span id="chosenSubject" class="chosen-subject"></span>
+                  <span id="chosenGrade" class="chosen-grade"></span>
+                  <span class="timer" id="timer"></span>
+                </section>
+      
+                <section class="quiz-scope-container" id="quizScopeContainer">
+                  <header class="my-3 text-center">
+                    <h2 class="fs-1">SCOPE</h2>
+                    <small class="text-secondary"
+                      >This the scope of the Subject and grade you chose</small
+                    >
+                  </header>
+                  <section class="w-100" id="scope"></section>
+                  <section class="quiz-starting-game">
+                    <button id="quizStartButton" class="btn btn-primary">
+                      Start Quiz
+                    </button>
+                    <a href="quiz.html" class="btn btn-outline-secondary"> Back </a>
+                  </section>
+                </section>
+                <section class="quiz-body-container" id="quizBodyContainer">
+                  <div
+                    class="quiz-question-options-container"
+                    id="quizQuestionsOptionsContainer"
+                  ></div>
+      
+                  <section class="explanation-container" id="explanationContainer">
+                    <small id="explanationDisplay" class="quiz-explanation"></sma>
+                  </section>
+      
+                  <section
+                    id="nextQuestionContainer"
+                    class="next-question-container"
+                  ></section>
+                </section>
+                <section
+                  class="quiz-result-container container"
+                  id="quizResultContainer"
+                >
+              </section>
           </div>
-
-          <div class="quiz-scope-container" id="quizScopeContainer">
-            <header class="my-3 text-center">
-              <h2 class="fs-1">SCOPE</h2>
-              <small class="text-secondary"
-                >This the scope of the Subject and grade you chose</small
-              >
-            </header>
-            <div class="w-100" id="scope"></div>
-            <div class="quiz-starting-game">
-              <button id="quizStartButton" class="btn btn-primary">
-                Start Quiz
-              </button>
-              <a href="quiz.html" class="btn btn-outline-secondary"> Back </a>
-            </div>
-          </div>
-          <div class="quiz-body-container" id="quizBodyContainer">
-            <div
-              class="quiz-question-options-container"
-              id="quizQuestionsOptionsContainer"
-            ></div>
-
-            <div class="explanation-container" id="explanationContainer">
-              <span id="explanationDisplay" class="quiz-explanation"></span>
-            </div>
-
-            <div
-              id="nextQuestionContainer"
-              class="next-question-container"
-            ></div>
-          </div>
-          <div class="quiz-result-container" id="quizResultContainer"></div>
-        </section>
+        </div>
       </section>
+  
+      
     </main>
     <script src="data/questions.js"></script>
     <script src="data/scopes.js"></script>

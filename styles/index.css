@@ -26,6 +26,10 @@
   border-color: var(--Accent) !important;
 }
 
+h2.text-primary {
+  color: var(--Accent) !important;
+}
+
 .text-primary {
   color: var(--Accent) !important;
 }

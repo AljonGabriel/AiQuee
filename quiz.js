@@ -10,7 +10,7 @@ const userNameDisplay = document.querySelector("#userName"),
   explanationDisplay = document.querySelector("#explanationDisplay"),
   scopeDisplay = document.querySelector("#scope");
 
-//cotainer
+//container
 const quizMechanicsContainer = document.querySelector(
     "#quizMechanicsContainer",
   ),
@@ -30,15 +30,15 @@ const answerButton = document.querySelectorAll("#answerButton"),
   nextQuestion = document.querySelector("#nextQuestion");
 
 //subjects
-const subjects = {
+/* const subjects = {
   english: document.getElementById("englishSubject"),
   science: document.getElementById("scienceSubject"),
   math: document.getElementById("mathSubject"),
   filipino: document.getElementById("filipinoSubject"),
-};
+}; */
 
 //grades
-const grades = {
+/* const grades = {
   Seven: document.getElementById("grade7"),
   Eight: document.getElementById("grade8"),
   Nine: document.getElementById("grade9"),
@@ -46,6 +46,10 @@ const grades = {
   Eleven: document.getElementById("grade11"),
   Twelve: document.getElementById("grade12"),
 };
+ */
+
+const subjects = document.getElementById("subjects");
+const grades = document.getElementById("gradeLevel");
 
 let chosenSubject,
   chosenGrade,
@@ -56,14 +60,16 @@ let chosenSubject,
 
 function getScope() {
   const userName = userNameInput.value.trim(),
-    selectedSubject = document.querySelector('input[name="subject"]:checked'),
-    selectedGrade = document.querySelector('input[name="grade"]:checked');
+    selectedSubject = subjects.value,
+    selectedGrade = grades.value;
 
-  if (userName !== "" && selectedSubject && selectedGrade) {
+  console.log("Selected Subject :" + selectedSubject);
+
+  if (userName && selectedSubject !== "" && selectedGrade) {
     userNameDisplay.innerHTML = "Name: " + userName;
-    chosenSubject = selectedSubject.value;
+    chosenSubject = selectedSubject;
     chosenSubjectDisplay.innerHTML = "Subject: " + chosenSubject;
-    chosenGrade = selectedGrade.value;
+    chosenGrade = selectedGrade;
     chosenGradeDisplay.innerHTML = "Grade: " + chosenGrade;
   } else {
     alert("Please fill out all fields");
