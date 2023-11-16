@@ -242,6 +242,7 @@ function createQuestions() {
         "btn-outline-primary",
         "m-1",
         "answer-button",
+        "d-block"
       );
       optionItemElement.textContent = letters[i] + ") " + option.text;
 
