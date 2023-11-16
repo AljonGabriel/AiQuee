@@ -11,9 +11,7 @@ const userNameDisplay = document.querySelector("#userName"),
   scopeDisplay = document.querySelector("#scope");
 
 //container
-const quizMechanicsContainer = document.querySelector(
-    "#quizMechanicsContainer",
-  ),
+const 
   quizBodyContainer = document.querySelector("#quizBodyContainer"),
   quizScopeContainer = document.querySelector("#quizScopeContainer"),
   quizScopeHeaderContainer = document.querySelector(
@@ -30,26 +28,8 @@ const answerButton = document.querySelectorAll("#answerButton"),
   nextQuestion = document.querySelector("#nextQuestion");
 
 //subjects
-/* const subjects = {
-  english: document.getElementById("englishSubject"),
-  science: document.getElementById("scienceSubject"),
-  math: document.getElementById("mathSubject"),
-  filipino: document.getElementById("filipinoSubject"),
-}; */
 
-//grades
-/* const grades = {
-  Seven: document.getElementById("grade7"),
-  Eight: document.getElementById("grade8"),
-  Nine: document.getElementById("grade9"),
-  Ten: document.getElementById("grade10"),
-  Eleven: document.getElementById("grade11"),
-  Twelve: document.getElementById("grade12"),
-};
- */
-
-const subjects = document.getElementById("subjects");
-const grades = document.getElementById("gradeLevel");
+const subjects = document.getElementById("subjects"), grades = document.getElementById("gradeLevel");
 
 let chosenSubject,
   chosenGrade,
@@ -66,11 +46,11 @@ function getScope() {
   console.log("Selected Subject :" + selectedSubject);
 
   if (userName && selectedSubject !== "" && selectedGrade) {
-    userNameDisplay.innerHTML = "Name: " + userName;
+    userNameDisplay.innerHTML = userName;
     chosenSubject = selectedSubject;
-    chosenSubjectDisplay.innerHTML = "Subject: " + chosenSubject;
+    chosenSubjectDisplay.innerHTML = chosenSubject;
     chosenGrade = selectedGrade;
-    chosenGradeDisplay.innerHTML = "Grade: " + chosenGrade;
+    chosenGradeDisplay.innerHTML = chosenGrade;
   } else {
     alert("Please fill out all fields");
     return;
@@ -105,6 +85,7 @@ startGame.addEventListener("click", () => {
   quizQuestionsOptionsContainer.innerHTML = ""; // Clear the quiz container
 
   quizScopeContainer.style.display = "none";
+  quizScopeHeaderContainer.style.display = "block";
 
   // Shuffle the questions only once when the quiz starts
   const shuffledQuestions = shuffleArray(
@@ -278,18 +259,18 @@ function createQuestions() {
 
 function countDownTimer() {
   timer--;
-  timerDisplay.innerHTML = "Time left: " + formatTime(timer);
+  timerDisplay.innerHTML = formatTime(timer);
 
   if (currentQuestionIndex === shuffledQuestions.length) {
     clearInterval(countDownTimer);
     quizQuestionsOptionsContainer.innerHTML = "";
-    quizScopeHeaderContainer.style.display = "block";
+    quizScopeHeaderContainer.style.display = "none";
     explanationContainer.innerHTML = "";
     getResult();
   } else if (timer === 0) {
     clearInterval(countDownTimer);
     quizQuestionsOptionsContainer.innerHTML = "";
-    quizScopeHeaderContainer.style.display = "block";
+    quizScopeHeaderContainer.style.display = "none";
     explanationContainer.style.display = "none";
     nextQuestionContainer.style.display = "none";
     getResult();
@@ -306,33 +287,15 @@ function formatTime(seconds) {
 }
 
 function getResult() {
-  const quizResultContainer = document.querySelector("#quizResultContainer");
+  const resultDisplay = document.getElementById("score");
+  const resultContainer = document.getElementById("resultContainer");
+  const feedbackDisplay = document.getElementById("feedback");
 
-  const divElement = document.createElement("div");
+  resultContainer.style.display = "block";
 
-  const spanScoreElement = document.createElement("h2");
-  spanScoreElement.classList.add("quiz-result-score");
-  spanScoreElement.textContent = score;
-
-  const spanResultElement = document.createElement("span");
-  spanResultElement.classList.add("quiz-result");
+  resultDisplay.textContent = score;
 
   score >= 10
-    ? (spanResultElement.textContent = "You Passed !")
-    : (spanResultElement.textContent = "You failed, sorry!");
-
-  const btnElement = document.createElement("button");
-  btnElement.setAttribute("id", "retakeButton");
-  btnElement.classList.add("quiz-retake-button");
-  btnElement.textContent = "Try again?";
-
-  btnElement.addEventListener("click", () => {
-    location.reload();
-  });
-
-  divElement.append(spanScoreElement, spanResultElement, btnElement);
-
-  quizResultContainer.appendChild(divElement);
-
-  quizResultContainer.classList.add("slide-up");
+    ? (feedbackDisplay.textContent = "You Passed !")
+    : (feedbackDisplay.textContent = "You failed, sorry!");
 }

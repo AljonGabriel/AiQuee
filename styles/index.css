@@ -70,3 +70,12 @@ h2.text-primary {
   width: 100%;
   overflow: hidden;
 }
+
+.quiz-result-score {
+  font-size: 25px;
+}
+
+.result, .quiz-header {
+  display: none;
+}
+

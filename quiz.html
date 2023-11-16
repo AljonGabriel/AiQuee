@@ -15,7 +15,7 @@
     <title>Quiz</title>
   </head>
   <body>
-    <main class="container-fluid vh-100  pt-5 ">
+    <main class="container-fluid vh-100 bg-light  pt-5 ">
       <section class="container  background-container">
         <div class="row">
           <div class="col ">
@@ -73,18 +73,10 @@
                     <a href="index.html" class="btn btn-outline-secondary"> Back </a>
                   </section>
                 </section>
-                <section
-                  class="quiz-scope-header-container"
-                  id="quizScopeHeaderContainer"
-                >
-                  <span id="userName" class="user-name"></span>
-                  <span id="chosenSubject" class="chosen-subject"></span>
-                  <span id="chosenGrade" class="chosen-grade"></span>
-                  <span class="timer" id="timer"></span>
-                </section>
-      
-                <section class="quiz-scope-container" id="quizScopeContainer">
-                  <header class="my-3 text-center">
+         
+    
+                <section class="quiz-scope-container bg-white p-5" id="quizScopeContainer">
+                  <header class="my-3">
                     <h2 class="fs-1">SCOPE</h2>
                     <small class="text-secondary"
                       >This the scope of the Subject and grade you chose</small
@@ -98,9 +90,19 @@
                     <a href="quiz.html" class="btn btn-outline-secondary"> Back </a>
                   </section>
                 </section>
-                <section class="quiz-body-container" id="quizBodyContainer">
+                
+                <section class="p-5 bg-white" id="quizBodyContainer">
+                  <section
+                  class="quiz-header bg-white"
+                  id="quizScopeHeaderContainer"
+                >
+                    <p class="d-block my-1"><strong>Challenger : </strong><i id="userName"></i></h5>
+                    <p class="d-block my-1"><strong>Subject : </strong><i id="chosenSubject"></i></h5>
+                    <p class="d-block my-1"><strong>Grade : </strong><i id="chosenGrade"></i></h5>
+                    <p class="d-block my-1"><strong>Timer : </strong><i id="timer">15:00</i></h5>
+                </section>
                   <div
-                    class="quiz-question-options-container"
+                    class="text-center"
                     id="quizQuestionsOptionsContainer"
                   ></div>
       
@@ -113,11 +115,13 @@
                     class="next-question-container"
                   ></section>
                 </section>
-                <section
-                  class="quiz-result-container container"
-                  id="quizResultContainer"
-                >
-              </section>
+          
+                <section id="resultContainer" class="text-center result position-absolute top-50 start-50 translate-middle">
+                  <h1 id="score"></h3>
+                  <a href="quiz.html" class="btn btn-secondary">Try Again ?</a>
+                  <small id="feedback"></small>
+                </section>
+        
           </div>
         </div>
       </section>
